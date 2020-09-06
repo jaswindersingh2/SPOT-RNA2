@@ -80,7 +80,7 @@ To run the SPOT-RNA2
 -----
 
 ```
-./run_spotrna.sh sample_run/6ufj.fasta 
+./run_spotrna2.sh sample_run/6ufj.fasta 
 ```
 
 The above command creates two folder `6ufj_features` and `6ufj_outputs` under the folder contains input file (`sample_run/` folder in this case). `6ufj_features/` contains all the alignments (MSA-1, MSA-2) and features (PSSM, DCA, bps probability) generated from SPOT-RNA2 pipeline. `6ufj_outputs/` contains predicted secondary structure in bpseq format (`6ufj.bpseq`), ct format (`6ufj.ct`), dbn format (`6ufj.st`) with secondary structure motifs, and base-pair probability (`6ufj.prob`). The verify the results, it should be as in `sample_seq_features` and `sample_seq_outputs` folder because both sequences (`sample_seq.fasta` and `6ufj.fasta`) are same.
