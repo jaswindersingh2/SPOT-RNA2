@@ -27,52 +27,54 @@ To install SPOT-RNA2 and it's dependencies following commands can be used in ter
 
 1. `git clone https://github.com/jaswindersingh2/SPOT-RNA2.git`
 2. `cd SPOT-RNA2`
+3. `wget -O utils/models_ckps.tar.xz 'https://www.dropbox.com/s/udzcsva76lh5wvq/models_ckps.tar.xz' || wget -O utils/models_ckps.tar.xz 'https://app.nihaocloud.com/f/586acb2658d74ccb92b8/?dl=1'`
+4. `tar -xvf utils/models_ckps.tar.xz -C utils/ && rm utils/models_ckps.tar.xz`
 
 Either follow **virtualenv** column steps or **conda** column steps to create virtual environment and to install SPOT-RNA2 python dependencies given in table below:<br />
 
 |  | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; virtualenv | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; conda |
 | :- | :-------- | :--- |
-| 3. | `virtualenv -p python3.6 venv` | `conda create -n venv python=3.6` |
-| 4. | `source ./venv/bin/activate` | `conda activate venv` | 
-| 5. | `pip install -r requirements.txt && deactivate` | `while read p; do conda install --yes $p; done < requirements.txt && conda deactivate` | 
+| 5. | `virtualenv -p python3.6 venv` | `conda create -n venv python=3.6` |
+| 6. | `source ./venv/bin/activate` | `conda activate venv` | 
+| 7. | `pip install -r requirements.txt && deactivate` | `while read p; do conda install --yes $p; done < requirements.txt && conda deactivate` | 
 
 If Infernal tool is already installed in the system, please add path to the folder contains binary files in line no. 12 of `run_spotrna2.sh` file. In case, Infernal tool is not installed in the system, please use follwing two commands to download and extract it. In case of any problem regarding Infernal download, please refer to [Infernal webpage](http://eddylab.org/infernal/) as following commands only tested on Ubuntu 18.04, 64 bit system.
 
-6. `wget 'eddylab.org/infernal/infernal-1.1.3-linux-intel-gcc.tar.gz'`
-7. `tar -xvzf infernal-*.tar.gz && rm infernal-*.tar.gz`
+8. `wget 'eddylab.org/infernal/infernal-1.1.3-linux-intel-gcc.tar.gz'`
+9. `tar -xvzf infernal-*.tar.gz && rm infernal-*.tar.gz`
 
 If BLASTN tool is already installed in the system, please add path to the folder contains binary files in line no. 10 of `run_spotrna2.sh` file. In case, BLASTN tool is not installed in the system, please use follwing two commands to download and extract it. In case of any problem regarding BLASTN download, please refer to [BLASTN webpage](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlasstDocs&DOC_TYPE=Download) as following commands only tested on Ubuntu 18.04, 64 bit system.
 
-8. `wget 'ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-*+-x64-linux.tar.gz'`
-9. `tar -xvzf ncbi-blast-*+-x64-linux.tar.gz && rm ncbi-blast-*+-x64-linux.tar.gz`
+10. `wget 'ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-*+-x64-linux.tar.gz'`
+11. `tar -xvzf ncbi-blast-*+-x64-linux.tar.gz && rm ncbi-blast-*+-x64-linux.tar.gz`
 
 To install **SPOT-RNA** predictor to obtain consensus secondary structure for the MSA-1 from BLASTN, the following three command can be used.<br />
 
-10. `git clone https://github.com/jaswindersingh2/SPOT-RNA.git && cd SPOT-RNA`
+12. `git clone https://github.com/jaswindersingh2/SPOT-RNA.git && cd SPOT-RNA`
 
-11. `wget 'https://www.dropbox.com/s/dsrcf460nbjqpxa/SPOT-RNA-models.tar.gz' || wget -O SPOT-RNA-models.tar.gz 'https://app.nihaocloud.com/f/fbf3315a91d542c0bdc2/?dl=1'`
+13. `wget 'https://www.dropbox.com/s/dsrcf460nbjqpxa/SPOT-RNA-models.tar.gz' || wget -O SPOT-RNA-models.tar.gz 'https://app.nihaocloud.com/f/fbf3315a91d542c0bdc2/?dl=1'`
 
-12. `tar -xvzf SPOT-RNA-models.tar.gz && rm SPOT-RNA-models.tar.gz && cd ../`
+14. `tar -xvzf SPOT-RNA-models.tar.gz && rm SPOT-RNA-models.tar.gz && cd ../`
 
 If NCBI's nt database already available in your system, please add path to database in line no. 11 and line 13 of `run_spotrna.sh` file.  Otherwise, download the reference database ([NCBI's nt database](ftp://ftp.ncbi.nlm.nih.gov/blast/db/)) for BLASTN and INFERNAL. The following command can used for NCBI's nt database download. Make sure there is enough space on the system as database is of size around 270 GB after extraction and it can take couple of hours to download depending on the internet bandwidth. In case of any problem, please refer to [NCBI's database website](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDocs&DOC_TYPE=Download).
 
-13. `wget -c "ftp://ftp.ncbi.nlm.nih.gov/blast/db/FASTA/nt.gz" -O ./nt_database/nt.gz && gunzip ./nt_database/nt.gz`
+15. `wget -c "ftp://ftp.ncbi.nlm.nih.gov/blast/db/FASTA/nt.gz" -O ./nt_database/nt.gz && gunzip ./nt_database/nt.gz`
 
 The database need to formated to use with BLASTN tool. To format it, the following command can be used. Please make sure system have enough space as formated database is of size around 120 GB in addition to appox. 270 GB from previous step and it can few hours for it.
 
-14. `./ncbi-blast-2.10.0+/bin/makeblastdb -in ./nt_database/nt -dbtype nucl`
+16. `./ncbi-blast-2.10.0+/bin/makeblastdb -in ./nt_database/nt -dbtype nucl`
 
 To install the DCA predictor, the following 2 command can be used:<br />
 
-15. `git clone "https://github.com/sokrypton/GREMLIN_CPP"`
+17. `git clone "https://github.com/sokrypton/GREMLIN_CPP"`
 
-16. `cd GREMLIN_CPP && g++ -O3 -std=c++0x -o gremlin_cpp gremlin_cpp.cpp -fopenmp && cd ../`
+18. `cd GREMLIN_CPP && g++ -O3 -std=c++0x -o gremlin_cpp gremlin_cpp.cpp -fopenmp && cd ../`
 
 To install the LinearPartition, the following 2 command can be used:<br />
 
-17. `git clone 'https://github.com/LinearFold/LinearPartition.git'`
+19. `git clone 'https://github.com/LinearFold/LinearPartition.git'`
 
-18. `cd LinearPartition/ && make && cd ../`
+20. `cd LinearPartition/ && make && cd ../`
 
 To run the SPOT-RNA2
 -----
