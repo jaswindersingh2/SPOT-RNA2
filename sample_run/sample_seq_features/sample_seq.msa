@@ -1,0 +1,157 @@
+# STOCKHOLM 1.0
+#=GF AU Infernal 1.1.3
+
+#=GS 6UFJ_A/1-51                  DE Chain A, RNA (50-MER)
+#=GS 6UEY_A/1-50                  DE Chain A, RNA (50-MER)
+#=GS HE577054.1/3246821-3246757   DE Paenibacillus polymyxa M1 main chromosome, complete genome
+#=GS MF288922.1/150528-150592     DE Bacillus phage Janet, complete genome
+#=GS CP033464.1/4485719-4485655   DE Brevibacillus laterosporus strain 1821L chromosome, complete genome
+#=GS KT307976.1/157679-157741     DE Bacillus phage AvesoBmore, complete genome
+#=GS CP032410.1/870062-870126     DE Brevibacillus laterosporus strain E7593-50 chromosome, complete genome
+#=GS MK892513.1/27480-27550       DE Prokaryotic dsDNA virus sp. isolate Unbinned_2716_contig-100_1, complete genome
+#=GS MK892777.1/32264-32334       DE Prokaryotic dsDNA virus sp. isolate Tp1_39_SUR_34326_1, partial genome
+#=GS MF288921.1/151458-151522     DE Bacillus phage OTooleKemple52, complete genome
+#=GS MH638310.1/151443-151507     DE Bacillus phage Kamfam, complete genome
+#=GS KJ489397.1/151758-151822     DE Bacillus phage CAM003, complete genome
+#=GS KJ489398.1/150857-150921     DE Bacillus phage Evoli, complete genome
+#=GS KJ489400.1/150952-151016     DE Bacillus phage Hoody T, complete genome
+#=GS KU737346.1/152020-152084     DE Bacillus phage Vinny, complete genome
+#=GS KF669647.1/155754-155816     DE Bacillus phage BigBertha, complete genome
+#=GS KU737345.1/154884-154946     DE Bacillus phage Juglone, complete genome
+#=GS KU737347.1/155734-155796     DE Bacillus phage Phrodo, complete genome
+#=GS MN038178.1/155190-155252     DE Bacillus phage Beyonphe, complete genome
+#=GS KF208639.2/156075-156137     DE Bacillus phage Troll, complete genome
+#=GS CP009278.1/2800251-2800310   DE Sphingobacterium sp. ML3W, complete genome
+#=GS CP045298.1/5377890-5377826   DE Paenibacillus brasilensis strain KACC 13842 chromosome, complete genome
+#=GS KF669662.1/155100-155162     DE Bacillus phage Spock, complete genome
+#=GS KR063281.1/60079-60028       DE Gordonia phage GMA2, complete genome
+#=GS KJ489402.1/153758-153819     DE Bacillus phage Riley, complete genome
+#=GS MF765814.1/155980-156041     DE Bacillus phage Taffo16, complete genome
+#=GS CP000154.2/3364238-3364174   DE Paenibacillus polymyxa E681, complete genome
+#=GS LN852800.1/7754-7693         DE Uncultured prokaryote from Rat gut metagenome metamobilome, plasmid pRGRH0110
+#=GS CP019039.1/7984-8046         DE Bacillus velezensis strain GH1-13 plasmid unnamed, complete sequence
+#=GS LN852940.1/1904-1844         DE Uncultured prokaryote from Rat gut metagenome metamobilome, plasmid pRGRH0268
+#=GS JN790865.1/35681-35620       DE Bacillus phage B4, complete genome
+#=GS JN797796.1/35736-35675       DE Bacillus phage B5S, complete genome
+#=GS KY888882.1/156410-156472     DE Bacillus phage Flapjack, complete genome
+#=GS CP014843.1/29638-29697       DE Bacillus licheniformis strain SCDB 14 plasmid pSCDB14, complete sequence
+#=GS CP021670.1/37922-37863       DE Bacillus licheniformis strain SRCM100141 plasmid pBL141-2 sequence
+#=GS CP035189.1/167253-167194     DE Bacillus licheniformis strain SRCM103914 plasmid unnamed1, complete sequence
+#=GS CP045906.1/14639513-14639571 DE Caligus rogercresseyi isolate FCH chromosome 17
+#=GS HG916826.1/843085-843030     DE Pseudomonas pseudoalcaligenes CECT 5344 complete genome
+#=GS LK391695.1/845304-845249     DE Pseudomonas pseudoalcaligenes genome assembly Ppseudo_Pac, chromosome : I
+#=GS XM_028713395.1/30-87         DE PREDICTED: Podarcis muralis solute carrier family 16 member 6 (SLC16A6), mRNA
+#=GS AC100771.2/133706-133648     DE Homo sapiens chromosome 11, clone RP11-159H22, complete sequence
+#=GS CP022654.2/63818-63880       DE Bacillus velezensis strain SCDB 291 chromosome, complete genome
+#=GS CP023320.1/44833-44771       DE Bacillus velezensis strain SCGB 1 chromosome, complete genome
+#=GS CP045899.1/5107513-5107456   DE Caligus rogercresseyi isolate FCH chromosome 10
+#=GS CP045890.1/2686952-2687009   DE Caligus rogercresseyi isolate FCH chromosome 1
+#=GS CP010557.1/4528803-4528858   DE Raoultella ornithinolytica strain S12, complete genome
+#=GS LR134253.1/1479651-1479596   DE Klebsiella aerogenes strain NCTC9997 genome assembly, chromosome: 3
+#=GS MH153801.1/58164-58217       DE Microbacterium phage Count, complete genome
+#=GS CP045896.1/486401-486459     DE Caligus rogercresseyi isolate FCH chromosome 7
+#=GS CP045901.1/8022709-8022767   DE Caligus rogercresseyi isolate FCH chromosome 12
+
+6UFJ_A/1-51                          ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCG.GAGAGCAG...A-...............---------
+#=GR 6UFJ_A/1-51                  PP ******************************************.********...8.........................
+6UEY_A/1-50                          ACUCGUUUGAGCGAGUAUAAACAGUUGGUUAGGCUCAAAGCG.GAGAGCAG...--...............---------
+#=GR 6UEY_A/1-50                  PP ******************************************.********.............................
+HE577054.1/3246821-3246757           ACUCGUCUGAGCGAGUAUAAACAGGUCAUUAAGCUCAGAGCG.UUCACCG-...--ggau....caug...-CGGUGAGG
+#=GR HE577054.1/3246821-3246757   PP ******************************************.******8......5666....6665....8*******
+MF288922.1/150528-150592             ACUCGUGUGAGCGAGUAUAAACAGCC-UUUAAGCUCACAGCGuUAGAGAGG...--guu......ucu...CCUCUCUAG
+#=GR MF288922.1/150528-150592     PP *************************7.59*************88******9.....577......777...9********
+CP033464.1/4485719-4485655           ACUCGAUUGAGCGAGUAUAAACAGAC-CUUAGGCUCAAAGCG.UUGAGAAG...--caa.....aaag...CUUCUCAGG
+#=GR CP033464.1/4485719-4485655   PP ************************76.59*************.*******9.....677.....7777...9********
+KT307976.1/157679-157741             ACUCGUGUGAGCGAGUAUAAACAGGC-UUUAGGCUCACAGCG.UCGCGGGGuuuAU...............CCCCGCGGG
+#=GR KT307976.1/157679-157741     PP ***********************854.499************.********76666...............*********
+CP032410.1/870062-870126             ACUCGAUUGAGCGAGUAUAAAUAGAC-CUUAAGCUCAAAGCG.UUGAGGAG...--cga.....ucag...CUUCUCAGG
+#=GR CP032410.1/870062-870126     PP ************************76.59*************.*******9.....677.....7777...9********
+MK892513.1/27480-27550               AGUCGUUUGAGCGACUUAAAAUAGC-GUUUAAGCUCAAAGCGuGCGUAUAG...--cuaggucaagug...CUAUACGCG
+#=GR MK892513.1/27480-27550       PP ************************9.89**********************9.....8***********...9********
+MK892777.1/32264-32334               AGUCGUUUGAGCGACUUAAAAUAGC-GUUUAAGCUCAAAGCGuGCGUAUAG...--cuaggucaagug...CUAUACGCG
+#=GR MK892777.1/32264-32334       PP ************************9.89**********************9.....8***********...9********
+MF288921.1/151458-151522             ACUCGUGUGAGCGAGUAUAAACAGAC-UUUAGGCUCACAGCGuUAGAGAGG...--guu......ucu...CCUCUCUAG
+#=GR MF288921.1/151458-151522     PP ************************75.59*************88******9.....577......777...9********
+MH638310.1/151443-151507             ACUCGUGUGAGCGAGUAUAAACAGAC-UUUAGGCUCACAGCGuUAGAGAGG...--guu......ucu...CCUCUCUAG
+#=GR MH638310.1/151443-151507     PP ************************75.59*************88******9.....577......777...9********
+KJ489397.1/151758-151822             ACUCGUGUGAGCGAGUAUAAACAGCC-UUUAGGCUCACAGCGuUAGGGAGG...--guu......ucu...CCUCUCUAG
+#=GR KJ489397.1/151758-151822     PP *************************7.59*************889*99999.....577......777...999****9*
+KJ489398.1/150857-150921             ACUCGUGUGAGCGAGUAUAAACAGCC-UUUAGGCUCACAGCGuUAGGGAGG...--guu......ucu...CCUCUCUAG
+#=GR KJ489398.1/150857-150921     PP *************************7.59*************889*99999.....577......777...999****9*
+KJ489400.1/150952-151016             ACUCGUGUGAGCGAGUAUAAACAGCC-UUUAGGCUCACAGCGuUAGGGAGG...--guu......ucu...CCUCUCUAG
+#=GR KJ489400.1/150952-151016     PP *************************7.59*************889*99999.....577......777...999****9*
+KU737346.1/152020-152084             ACUCGUGUGAGCGAGUAUAAACAGCC-UUUAGGCUCACAGCGuUAGGGAGG...--guu......ucu...CCUCUCUAG
+#=GR KU737346.1/152020-152084     PP *************************7.59*************889*99999.....577......777...999****9*
+KF669647.1/155754-155816             ACUCGUGUGAGCGAGUAUAAACAGGC-UUUAGGCUCACAGCG.UCGCGGGGuuuAU...............CCCCGUGGG
+#=GR KF669647.1/155754-155816     PP ***********************854.499************.********76666...............*********
+KU737345.1/154884-154946             ACUCGUGUGAGCGAGUAUAAACAGGC-UUUAGGCUCACAGCG.UCGCGGGGuuuAU...............CCCCGUGGG
+#=GR KU737345.1/154884-154946     PP ***********************854.499************.********76666...............*********
+KU737347.1/155734-155796             ACUCGUGUGAGCGAGUAUAAACAGGC-UUUAGGCUCACAGCG.UCGCGGGGuuuAU...............CCCCGUGGG
+#=GR KU737347.1/155734-155796     PP ***********************854.499************.********76666...............*********
+MN038178.1/155190-155252             ACUCGUGUGAGCGAGUAUAAACAGGC-UUUAGGCUCACAGCG.UCGCGGGGuuuAU...............CCCCGUGGG
+#=GR MN038178.1/155190-155252     PP ***********************854.499************.********76666...............*********
+KF208639.2/156075-156137             ACUCGUGUGAGCGAGUAUAAACAGGC-UUUAGGCUCACAGCG.UCGCGGGGcuuAU...............CCCCGUGGG
+#=GR KF208639.2/156075-156137     PP ***********************854.499************.********76666...............*********
+CP009278.1/2800251-2800310           AGUCGUUUGAGCGACUUAAAAUAGGU-UUUAAGCUCAAAGCG.CCCCGAUA...AU...............AAUCGGGAG
+#=GR CP009278.1/2800251-2800310   PP ************************98.499************.********...**...............*********
+CP045298.1/5377890-5377826           GUUCGUCUGAGCGAACGCAAACAGGCCAUUAAGCUCAGAGCG.UUCACCGG..gAU............cauCCGGUGAGG
+#=GR CP045298.1/5377890-5377826   PP ******************************************.*******9..643............334*********
+KF669662.1/155100-155162             ACUCGUGUAAGCGAGUAUAAAAAGGC-UUUAGGCUUACAGCG.UCGCGGAGuuuAU...............CUCCGCGGG
+#=GR KF669662.1/155100-155162     PP *********************99843.499************.********76666...............*********
+KR063281.1/60079-60028               ACUCGACUGAGCGAGUAUAAACAGUU-CUUAAGCUCAGAGCG.GCC-----...--ga........ga...-----GGCG
+#=GR KR063281.1/60079-60028       PP ************************88.59*************.985..........67........76........589*
+KJ489402.1/153758-153819             ACUCGUGUGAGCGAGUAUAAAUAGGC-UUUAAGCUCACAGCG.UCGCGGG-...--guuu....aucu...-C--CCGCG
+#=GR KJ489402.1/153758-153819     PP ***********************854.49*************.6665555......4566....6654....4..5555*
+MF765814.1/155980-156041             ACUCGUGUGAGCGAGUAUAAAUAGGC-UUUAAGCUCACAGCG.UCGCGGG-...--guuu....aucu...-C--CCGCG
+#=GR MF765814.1/155980-156041     PP ***********************854.49*************.6665555......4566....6654....4..5555*
+CP000154.2/3364238-3364174           GUUCGUCUGAGCGAACGCAAACAGGCCAUUAAGCUCAGAGCG.UUCACUGG...A-uu.......cgu...CCAGUGAGA
+#=GR CP000154.2/3364238-3364174   PP ******************************************.********...8.55.......555...*********
+LN852800.1/7754-7693                 GCUCGUCUGGGCGAGGAUAAACAGCUA-UUAAGCCCAGAGCG.UUCCGGUU...AU............a.uGAUCGGAGG
+#=GR LN852800.1/7754-7693         PP **************************5.9*************.*****998...64............3.3789******
+CP019039.1/7984-8046                 AGUCGUCUGGGCGACUAUAAACAGGC-AUUAAGCUCAGAGCG.UCCUUCC-...--ugc.....uucg...-GGAAGGGG
+#=GR CP019039.1/7984-8046         PP ***********************975.69*************.***9997......688.....8886....7999****
+LN852940.1/1904-1844                 GCUCGUCUGGGCGAGGGUAAAUAGCUAAUUAGGCCCAGAGCGuUCCAGGAU...G-...............AUCCUGGAG
+#=GR LN852940.1/1904-1844         PP ******************************************889******...9................*********
+JN790865.1/35681-35620               AGUCGUGUGAGCGACUAUAAACAGGC-UUUAGGCUCACAGCG.UCGCGGGG...--uu........ua...UCCCCCGUG
+#=GR JN790865.1/35681-35620       PP ***********************854.499************.99977665.....33........33...34555888*
+JN797796.1/35736-35675               AGUCGUGUGAGCGACUAUAAACAGGC-UUUAGGCUCACAGCG.UCGCGGGG...--uu........ua...UCCCCCGUG
+#=GR JN797796.1/35736-35675       PP ***********************854.499************.99977665.....33........33...34555888*
+KY888882.1/156410-156472             ACUCGUGUGAGUGAGUAUAAACAGGC-UUUAGGCUCACAGCG.UCGCGGGG...--uuu......auc...CCCUGCG-G
+#=GR KY888882.1/156410-156472     PP ***********************854.499************.99999999.....455......555...8899999.*
+CP014843.1/29638-29697               AGUCGUCUGGGCGACUAUAAACAGGC-AUUAAGCCCAGAGCG.UUUCCCUU...CU...............AGGGGAGGU
+#=GR CP014843.1/29638-29697       PP ***********************975.69*************.********...**...............*********
+CP021670.1/37922-37863               AGUCGUCUGGGCGACUAUAAACAGGC-AUUAAGCCCAGAGCG.UUUCCCUU...CU...............AGGGGAGGU
+#=GR CP021670.1/37922-37863       PP ***********************975.69*************.********...**...............*********
+CP035189.1/167253-167194             AGUCGUCUGGGCGACUAUAAACAGGC-AUUAAGCCCAGAGCG.UUUCCCUU...CU...............AGGGGAGGU
+#=GR CP035189.1/167253-167194     PP ***********************975.69*************.********...**...............*********
+CP045906.1/14639513-14639571         UCUUGCUUGAGCAAGAAUAAAGAGCUGUACAUAAGCAAAGAG.UCUUGCCU...--...............GAGCAAGAG
+#=GR CP045906.1/14639513-14639571 PP ***************************999999999******.*****943....................569******
+HG916826.1/843085-843030             CCCCGCUGGCGCGGGGAACACCACCUUGUCAAGCUCAAAGCG.AAAUUCGG...GG...............CCG-----G
+#=GR HG916826.1/843085-843030     PP ******************************************.********...**...............***.....*
+LK391695.1/845304-845249             CCCCGCUGGCGCGGGGAACACCACCUUGUCAAGCUCAAAGCG.AAAUUCGG...GG...............CCG-----G
+#=GR LK391695.1/845304-845249     PP ******************************************.********...**...............***.....*
+XM_028713395.1/30-87                 ACCGGCUCGAGCCGGUAUAAAAAGCU---UGAGCUCGAGCAC.AGCGGCAG...CA...............CUGCCGCAG
+#=GR XM_028713395.1/30-87         PP *************************7...669****998888.9*******...99...............*********
+AC100771.2/133706-133648             GUUCAUUUGGGUGAAUAUAAAAAGGAGAUUA--CUCAAAGCU.UUAAAAAA...AA...............UUUUUUUAA
+#=GR AC100771.2/133706-133648     PP ******************************9..9********.98888888...88...............*********
+CP022654.2/63818-63880               AGUCGUCUGGGCGACUAUAAACAGAC-AUUAAGCCCAGAGCG.UCCUUCC-...--ugc.....uacg...-GGAAGGGG
+#=GR CP022654.2/63818-63880       PP ************************86.69*************.****997......678.....8886....899*****
+CP023320.1/44833-44771               AGUCGUCUGGGCGACUAUAAACAGAC-AUUAAGCCCAGAGCG.UCCUUCC-...--ugc.....uacg...-GGAAGGGG
+#=GR CP023320.1/44833-44771       PP ************************86.69*************.****997......678.....8886....899*****
+CP045899.1/5107513-5107456           UCUUGCUUGAGCAAGAAUAAAGAGAUGUACAUAAGCAAAGAG.UCUUGCUG...--...............-AGCAAGAG
+#=GR CP045899.1/5107513-5107456   PP ***************************999999999******.******85.....................59******
+CP045890.1/2686952-2687009           UCUUGCUUGAGCAAGAAUAAAGAGAUGUACAUAAGCAAAGAG.UCUUGCUG...--...............-AGCAAGAG
+#=GR CP045890.1/2686952-2687009   PP ***************************999999999******.******85.....................59******
+CP010557.1/4528803-4528858           CGUCGCCUGAACGACGAUAAACUGAAGGUUAAGCUA------.UCAGGCAG...AU..............uCUGCCAGAG
+#=GR CP010557.1/4528803-4528858   PP **********************************96.......8889****...96..............6*********
+LR134253.1/1479651-1479596           CGUCGCCUGAACGACGAUAAACUGAAGGUUAAGCUA------.UCAGGCAG...AU..............uCUGCCAGAG
+#=GR LR134253.1/1479651-1479596   PP **********************************96.......8889****...96..............6*********
+MH153801.1/58164-58217               AGUCGUCUGAGCGACUUUAAAUAGGU-CUUAGGCUCAGAGCG.GAUAGAUG...--...............----UAUUG
+#=GR MH153801.1/58164-58217       PP ************************98.49*************.*9985433........................4566*
+CP045896.1/486401-486459             UCUUGCUUGAGCAAGAAUAAAGAGAUGUACAUAAGCAAAGAG.UCUUGC--...AU...............GAGCAAGAG
+#=GR CP045896.1/486401-486459     PP ***************************999999999******.*****9.....77...............78*******
+CP045901.1/8022709-8022767           UCUUGCUUGAGCAAGAAUAAAGAGAUGUACAUAAGCAAAGAG.UCUUGC--...AU...............GAGCAAGAG
+#=GR CP045901.1/8022709-8022767   PP ***************************999999999******.*****9.....77...............78*******
+#=GC SS_cons                         <<<<<<____>>>>>>--------------------------.<<<<<<<<...__~~~~~~~~~~~~...>>>>>>>>:
+#=GC RF                              ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCG.GAGAGCAG...AU~~~~~~~~~~~~...CUGCUCUCG
+//

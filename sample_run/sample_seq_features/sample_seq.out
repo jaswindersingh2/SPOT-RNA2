@@ -1,0 +1,743 @@
+# cmsearch :: search CM(s) against a sequence database
+# INFERNAL 1.1.3 (Nov 2019)
+# Copyright (C) 2019 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query CM file:                         /home/jaswinder/github/SPOT-RNA2/inputs/sample_seq_features/sample_seq.cm
+# target sequence database:              /home/jaswinder/Documents/project4/database/nt
+# output directed to file:               /home/jaswinder/github/SPOT-RNA2/inputs/sample_seq_features/sample_seq.out
+# MSA of significant hits saved to file: /home/jaswinder/github/SPOT-RNA2/inputs/sample_seq_features/sample_seq.msa
+# sequence inclusion threshold:          E-value <= 10
+# number of worker threads:              24 [--cpu]
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       sample_seq  [CLEN=61]
+Description: E=0.0
+Hit scores:
+ rank     E-value  score  bias  sequence          start      end   mdl trunc   gc  description
+ ----   --------- ------ -----  -------------- -------- --------   --- ----- ----  -----------
+  (1) !   2.2e-11   73.8   0.0  6UFJ_A                1       51 +  cm    3' 0.47  Chain A, RNA (50-MER)
+  (2) !   3.1e-09   65.7   0.0  6UEY_A                1       50 +  cm    3' 0.48  Chain A, RNA (50-MER)
+  (3) !   6.9e-05   49.4   0.0  HE577054.1      3246821  3246757 -  cm    no 0.52  Paenibacillus polymyxa M1 main chromosome, complete genome
+  (4) !   0.00017   47.9   0.0  MF288922.1       150528   150592 +  cm    no 0.48  Bacillus phage Janet, complete genome
+  (5) !   0.00058   45.9   0.0  CP033464.1      4485719  4485655 -  cm    no 0.45  Brevibacillus laterosporus strain 1821L chromosome, complet
+  (6) !   0.00077   45.4   0.0  KT307976.1       157679   157741 +  cm    no 0.59  Bacillus phage AvesoBmore, complete genome
+  (7) !   0.00086   45.3   0.0  CP032410.1       870062   870126 +  cm    no 0.46  Brevibacillus laterosporus strain E7593-50 chromosome, comp
+  (8) !    0.0067   41.9   0.0  MK892513.1        27480    27550 +  cm    no 0.45  Prokaryotic dsDNA virus sp. isolate Unbinned_2716_contig-10
+  (9) !    0.0067   41.9   0.0  MK892777.1        32264    32334 +  cm    no 0.45  Prokaryotic dsDNA virus sp. isolate Tp1_39_SUR_34326_1, par
+ (10) !    0.0074   41.7   0.0  MF288921.1       151458   151522 +  cm    no 0.48  Bacillus phage OTooleKemple52, complete genome
+ (11) !    0.0074   41.7   0.0  MH638310.1       151443   151507 +  cm    no 0.48  Bacillus phage Kamfam, complete genome
+ (12) !    0.0074   41.7   0.0  KJ489397.1       151758   151822 +  cm    no 0.51  Bacillus phage CAM003, complete genome
+ (13) !    0.0074   41.7   0.0  KJ489398.1       150857   150921 +  cm    no 0.51  Bacillus phage Evoli, complete genome
+ (14) !    0.0074   41.7   0.0  KJ489400.1       150952   151016 +  cm    no 0.51  Bacillus phage Hoody T, complete genome
+ (15) !    0.0074   41.7   0.0  KU737346.1       152020   152084 +  cm    no 0.51  Bacillus phage Vinny, complete genome
+ (16) !    0.0076   41.7   0.0  KF669647.1       155754   155816 +  cm    no 0.57  Bacillus phage BigBertha, complete genome
+ (17) !    0.0076   41.7   0.0  KU737345.1       154884   154946 +  cm    no 0.57  Bacillus phage Juglone, complete genome
+ (18) !    0.0076   41.7   0.0  KU737347.1       155734   155796 +  cm    no 0.57  Bacillus phage Phrodo, complete genome
+ (19) !    0.0076   41.7   0.0  MN038178.1       155190   155252 +  cm    no 0.57  Bacillus phage Beyonphe, complete genome
+ (20) !    0.0079   41.6   0.0  KF208639.2       156075   156137 +  cm    no 0.59  Bacillus phage Troll, complete genome
+ (21) !    0.0095   41.3   0.0  CP009278.1      2800251  2800310 +  cm    no 0.43  Sphingobacterium sp. ML3W, complete genome
+ (22) !     0.031   39.4   0.0  CP045298.1      5377890  5377826 -  cm    no 0.57  Paenibacillus brasilensis strain KACC 13842 chromosome, com
+ (23) !      0.09   37.7   0.0  KF669662.1       155100   155162 +  cm    no 0.51  Bacillus phage Spock, complete genome
+ (24) !      0.11   37.3   0.0  KR063281.1        60079    60028 -  cm    no 0.54  Gordonia phage GMA2, complete genome
+ (25) !      0.14   36.9   0.0  KJ489402.1       153758   153819 +  cm    no 0.53  Bacillus phage Riley, complete genome
+ (26) !      0.14   36.9   0.0  MF765814.1       155980   156041 +  cm    no 0.53  Bacillus phage Taffo16, complete genome
+ (27) !      0.23   36.2   0.0  CP000154.2      3364238  3364174 -  cm    no 0.52  Paenibacillus polymyxa E681, complete genome
+ (28) !      0.93   33.9   0.0  LN852800.1         7754     7693 -  cm    no 0.53  Uncultured prokaryote from Rat gut metagenome metamobilome,
+ (29) !       1.7   32.9   0.0  CP019039.1         7984     8046 +  cm    no 0.56  Bacillus velezensis strain GH1-13 plasmid unnamed, complete
+ (30) !       1.7   32.8   0.0  LN852940.1         1904     1844 -  cm    no 0.56  Uncultured prokaryote from Rat gut metagenome metamobilome,
+ (31) !       1.8   32.8   0.0  JN790865.1        35681    35620 -  cm    no 0.56  Bacillus phage B4, complete genome
+ (32) !       1.8   32.8   0.0  JN797796.1        35736    35675 -  cm    no 0.56  Bacillus phage B5S, complete genome
+ (33) !       1.9   32.6   0.0  KY888882.1       156410   156472 +  cm    no 0.56  Bacillus phage Flapjack, complete genome
+ (34) !       3.5   31.7   0.0  CP014843.1        29638    29697 +  cm    no 0.53  Bacillus licheniformis strain SCDB 14 plasmid pSCDB14, comp
+ (35) !       3.5   31.7   0.0  CP021670.1        37922    37863 -  cm    no 0.53  Bacillus licheniformis strain SRCM100141 plasmid pBL141-2 s
+ (36) !       3.5   31.7   0.0  CP035189.1       167253   167194 -  cm    no 0.53  Bacillus licheniformis strain SRCM103914 plasmid unnamed1, 
+ (37) !       3.6   31.7   0.0  CP045906.1     14639513 14639571 +  cm    no 0.42  Caligus rogercresseyi isolate FCH chromosome 17
+ (38) !       4.2   31.4   0.0  HG916826.1       843085   843030 -  cm    no 0.66  Pseudomonas pseudoalcaligenes CECT 5344 complete genome
+ (39) !       4.2   31.4   0.0  LK391695.1       845304   845249 -  cm    no 0.66  Pseudomonas pseudoalcaligenes genome assembly Ppseudo_Pac, 
+ (40) !         5   31.1   0.0  XM_028713395.1       30       87 +  cm    no 0.62  PREDICTED: Podarcis muralis solute carrier family 16 member
+ (41) !       6.2   30.7   0.9  AC100771.2       133706   133648 -  cm    no 0.22  Homo sapiens chromosome 11, clone RP11-159H22, complete seq
+ (42) !       6.7   30.6   0.0  CP022654.2        63818    63880 +  cm    no 0.56  Bacillus velezensis strain SCDB 291 chromosome, complete ge
+ (43) !       6.7   30.6   0.0  CP023320.1        44833    44771 -  cm    no 0.56  Bacillus velezensis strain SCGB 1 chromosome, complete geno
+ (44) !         7   30.6   0.0  CP045899.1      5107513  5107456 -  cm    no 0.40  Caligus rogercresseyi isolate FCH chromosome 10
+ (45) !         7   30.6   0.0  CP045890.1      2686952  2687009 +  cm    no 0.40  Caligus rogercresseyi isolate FCH chromosome 1
+ (46) !       7.5   30.5   0.0  CP010557.1      4528803  4528858 +  cm    no 0.50  Raoultella ornithinolytica strain S12, complete genome
+ (47) !       7.5   30.5   0.0  LR134253.1      1479651  1479596 -  cm    no 0.50  Klebsiella aerogenes strain NCTC9997 genome assembly, chrom
+ (48) !       7.7   30.4   0.0  MH153801.1        58164    58217 +  cm    no 0.44  Microbacterium phage Count, complete genome
+ (49) !       8.9   30.2   0.0  CP045896.1       486401   486459 +  cm    no 0.39  Caligus rogercresseyi isolate FCH chromosome 7
+ (50) !       8.9   30.2   0.0  CP045901.1      8022709  8022767 +  cm    no 0.39  Caligus rogercresseyi isolate FCH chromosome 12
+
+
+Hit alignments:
+>> 6UFJ_A  Chain A, RNA (50-MER)
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (1) !   2.2e-11   73.8   0.0  cm        1       51 [~           1          51 + [~ 0.99    3' 0.47
+
+                                                          ????????        NC
+                <<<<<<____>>>>>>--------------------------<<<<<<<<_~~~~~~ CS
+  sample_seq  1 ACUCGuUUGAgCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGaGaGCaGA*[10]> 61
+                ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGAGAGCAGA      
+      6UFJ_A  1 ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGAGAGCAGA*[ 0]> 51
+                **************************************************8...... PP
+                ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGAGAGCAGA       RF
+
+>> 6UEY_A  Chain A, RNA (50-MER)
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (2) !   3.1e-09   65.7   0.0  cm        1       50 [~           1          50 + [~ 1.00    3' 0.48
+
+                                                          ????????       NC
+                <<<<<<____>>>>>>--------------------------<<<<<<<<~~~~~~ CS
+  sample_seq  1 ACUCGuUUGAgCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGaGaGCaG*[11]> 61
+                ACUCGUUUGAGCGAGUAUAAACAG UGGUUA GCUCAAAGCGGAGAGCAG      
+      6UEY_A  1 ACUCGUUUGAGCGAGUAUAAACAGUUGGUUAGGCUCAAAGCGGAGAGCAG*[ 0]> 50
+                **************************************************...... PP
+                ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGAGAGCAG       RF
+
+>> HE577054.1  Paenibacillus polymyxa M1 main chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (3) !   6.9e-05   49.4   0.0  cm        1       61 []     3246821     3246757 - .. 0.94    no 0.52
+
+                                                                                    NC
+                     <<<<<<____>>>>>>--------------------------<<<<<<<~~~~~>>>>>>>: CS
+  sample_seq       1 ACUCGuUUGAgCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGaGaGCa*[4]*uGCuCuCG 61     
+                     ACUCGU UGAGCGAGUAUAAACAG U  UUAAGCUCA AGCG ::A:C:     :G:U:: G
+  HE577054.1 3246821 ACUCGUCUGAGCGAGUAUAAACAGGUCAUUAAGCUCAGAGCGUUCACCG*[8]*CGGUGAGG 3246757
+                     ************************************************8..6..8******* PP
+                     ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGAGAGCA~~~~~UGCUCUCG RF
+
+>> MF288922.1  Bacillus phage Janet, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (4) !   0.00017   47.9   0.0  cm        1       61 []      150528      150592 + .. 0.94    no 0.48
+
+                                                                                      NC
+                    <<<<<<____>>>>>>--------------------------.<<<<<<<<~~~~~>>>>>>>>: CS
+  sample_seq      1 ACUCGuUUGAgCGAGUAUAAACAGCUGGUUAAGCUCAAAGCG.GaGaGCaG*[2]*CuGCuCuCG 61    
+                    ACUCGU UGAGCGAGUAUAAACAGC   UUAAGCUCA AGCG  AGAG::G     C::CUCU G
+  MF288922.1 150528 ACUCGUGUGAGCGAGUAUAAACAGCC-UUUAAGCUCACAGCGuUAGAGAGG*[6]*CCUCUCUAG 150592
+                    *************************7.59*************88******9..7..9******** PP
+                    ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCG.GAGAGCAG~~~~~CUGCUCUCG RF
+
+>> CP033464.1  Brevibacillus laterosporus strain 1821L chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (5) !   0.00058   45.9   0.0  cm        1       61 []     4485719     4485655 - .. 0.94    no 0.45
+
+                          v    v                                                      NC
+                     <<<<<<____>>>>>>--------------------------<<<<<<<<~~~~~>>>>>>>>: CS
+  sample_seq       1 ACUCGuUUGAgCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGaGaGCaG*[2]*CuGCuCuCG 61     
+                     ACUCG UUGA CGAGUAUAAACAG    UUA GCUCAAAGCG :GAG:AG     CU:CUC: G
+  CP033464.1 4485719 ACUCGAUUGAGCGAGUAUAAACAGAC-CUUAGGCUCAAAGCGUUGAGAAG*[7]*CUUCUCAGG 4485655
+                     ************************76.59********************9..7..9******** PP
+                     ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGAGAGCAG~~~~~CUGCUCUCG RF
+
+>> KT307976.1  Bacillus phage AvesoBmore, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (6) !   0.00077   45.4   0.0  cm        1       61 []      157679      157741 + .. 0.93    no 0.59
+
+                                                                                     NC
+                    <<<<<<____>>>>>>--------------------------<<<<<<<<...__>>>>>>>>: CS
+  sample_seq      1 ACUCGuUUGAgCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGaGaGCaG...AUCuGCuCuCG 61    
+                    ACUCGU UGAGCGAGUAUAAACAG    UUA GCUCA AGCG :G:G::G   AUC::C:C: G
+  KT307976.1 157679 ACUCGUGUGAGCGAGUAUAAACAGGC-UUUAGGCUCACAGCGUCGCGGGGuuuAUCCCCGCGGG 157741
+                    ***********************854.499********************76666********* PP
+                    ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGAGAGCAG...AUCUGCUCUCG RF
+
+>> CP032410.1  Brevibacillus laterosporus strain E7593-50 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (7) !   0.00086   45.3   0.0  cm        1       61 []      870062      870126 + .. 0.94    no 0.46
+
+                         v    v                                                      NC
+                    <<<<<<____>>>>>>--------------------------<<<<<<<<~~~~~>>>>>>>>: CS
+  sample_seq      1 ACUCGuUUGAgCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGaGaGCaG*[2]*CuGCuCuCG 61    
+                    ACUCG UUGA CGAGUAUAAA AG    UUAAGCUCAAAGCG :GAG AG     CU CUC: G
+  CP032410.1 870062 ACUCGAUUGAGCGAGUAUAAAUAGAC-CUUAAGCUCAAAGCGUUGAGGAG*[7]*CUUCUCAGG 870126
+                    ************************76.59********************9..7..9******** PP
+                    ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGAGAGCAG~~~~~CUGCUCUCG RF
+
+>> MK892513.1  Prokaryotic dsDNA virus sp. isolate Unbinned_2716_contig-100_1, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (8) !    0.0067   41.9   0.0  cm        1       61 []       27480       27550 + .. 0.98    no 0.45
+
+                                                                                      NC
+                   <<<<<<____>>>>>>--------------------------.<<<<<<<<~~~~~~>>>>>>>>: CS
+  sample_seq     1 ACUCGuUUGAgCGAGUAUAAACAGCUGGUUAAGCUCAAAGCG.GaGaGCaG*[ 2]*CuGCuCuCG 61   
+                   A UCGUUUGAGCGA U  AAA AGC G UUAAGCUCAAAGCG G:G:::AG      CU:::C:CG
+  MK892513.1 27480 AGUCGUUUGAGCGACUUAAAAUAGC-GUUUAAGCUCAAAGCGuGCGUAUAG*[12]*CUAUACGCG 27550
+                   ************************9.89**********************9...*..9******** PP
+                   ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCG.GAGAGCAG~~~~~~CUGCUCUCG RF
+
+>> MK892777.1  Prokaryotic dsDNA virus sp. isolate Tp1_39_SUR_34326_1, partial genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+  (9) !    0.0067   41.9   0.0  cm        1       61 []       32264       32334 + .. 0.98    no 0.45
+
+                                                                                      NC
+                   <<<<<<____>>>>>>--------------------------.<<<<<<<<~~~~~~>>>>>>>>: CS
+  sample_seq     1 ACUCGuUUGAgCGAGUAUAAACAGCUGGUUAAGCUCAAAGCG.GaGaGCaG*[ 2]*CuGCuCuCG 61   
+                   A UCGUUUGAGCGA U  AAA AGC G UUAAGCUCAAAGCG G:G:::AG      CU:::C:CG
+  MK892777.1 32264 AGUCGUUUGAGCGACUUAAAAUAGC-GUUUAAGCUCAAAGCGuGCGUAUAG*[12]*CUAUACGCG 32334
+                   ************************9.89**********************9...*..9******** PP
+                   ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCG.GAGAGCAG~~~~~~CUGCUCUCG RF
+
+>> MF288921.1  Bacillus phage OTooleKemple52, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (10) !    0.0074   41.7   0.0  cm        1       61 []      151458      151522 + .. 0.93    no 0.48
+
+                                                                                      NC
+                    <<<<<<____>>>>>>--------------------------.<<<<<<<<~~~~~>>>>>>>>: CS
+  sample_seq      1 ACUCGuUUGAgCGAGUAUAAACAGCUGGUUAAGCUCAAAGCG.GaGaGCaG*[2]*CuGCuCuCG 61    
+                    ACUCGU UGAGCGAGUAUAAACAG    UUA GCUCA AGCG  AGAG::G     C::CUCU G
+  MF288921.1 151458 ACUCGUGUGAGCGAGUAUAAACAGAC-UUUAGGCUCACAGCGuUAGAGAGG*[6]*CCUCUCUAG 151522
+                    ************************75.59*************88******9..7..9******** PP
+                    ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCG.GAGAGCAG~~~~~CUGCUCUCG RF
+
+>> MH638310.1  Bacillus phage Kamfam, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (11) !    0.0074   41.7   0.0  cm        1       61 []      151443      151507 + .. 0.93    no 0.48
+
+                                                                                      NC
+                    <<<<<<____>>>>>>--------------------------.<<<<<<<<~~~~~>>>>>>>>: CS
+  sample_seq      1 ACUCGuUUGAgCGAGUAUAAACAGCUGGUUAAGCUCAAAGCG.GaGaGCaG*[2]*CuGCuCuCG 61    
+                    ACUCGU UGAGCGAGUAUAAACAG    UUA GCUCA AGCG  AGAG::G     C::CUCU G
+  MH638310.1 151443 ACUCGUGUGAGCGAGUAUAAACAGAC-UUUAGGCUCACAGCGuUAGAGAGG*[6]*CCUCUCUAG 151507
+                    ************************75.59*************88******9..7..9******** PP
+                    ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCG.GAGAGCAG~~~~~CUGCUCUCG RF
+
+>> KJ489397.1  Bacillus phage CAM003, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (12) !    0.0074   41.7   0.0  cm        1       61 []      151758      151822 + .. 0.93    no 0.51
+
+                                                                                      NC
+                    <<<<<<____>>>>>>--------------------------.<<<<<<<<~~~~~>>>>>>>>: CS
+  sample_seq      1 ACUCGuUUGAgCGAGUAUAAACAGCUGGUUAAGCUCAAAGCG.GaGaGCaG*[2]*CuGCuCuCG 61    
+                    ACUCGU UGAGCGAGUAUAAACAGC   UUA GCUCA AGCG  AG:G::G     C::C:CU G
+  KJ489397.1 151758 ACUCGUGUGAGCGAGUAUAAACAGCC-UUUAGGCUCACAGCGuUAGGGAGG*[6]*CCUCUCUAG 151822
+                    *************************7.59*************889*99999..7..999****9* PP
+                    ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCG.GAGAGCAG~~~~~CUGCUCUCG RF
+
+>> KJ489398.1  Bacillus phage Evoli, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (13) !    0.0074   41.7   0.0  cm        1       61 []      150857      150921 + .. 0.93    no 0.51
+
+                                                                                      NC
+                    <<<<<<____>>>>>>--------------------------.<<<<<<<<~~~~~>>>>>>>>: CS
+  sample_seq      1 ACUCGuUUGAgCGAGUAUAAACAGCUGGUUAAGCUCAAAGCG.GaGaGCaG*[2]*CuGCuCuCG 61    
+                    ACUCGU UGAGCGAGUAUAAACAGC   UUA GCUCA AGCG  AG:G::G     C::C:CU G
+  KJ489398.1 150857 ACUCGUGUGAGCGAGUAUAAACAGCC-UUUAGGCUCACAGCGuUAGGGAGG*[6]*CCUCUCUAG 150921
+                    *************************7.59*************889*99999..7..999****9* PP
+                    ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCG.GAGAGCAG~~~~~CUGCUCUCG RF
+
+>> KJ489400.1  Bacillus phage Hoody T, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (14) !    0.0074   41.7   0.0  cm        1       61 []      150952      151016 + .. 0.93    no 0.51
+
+                                                                                      NC
+                    <<<<<<____>>>>>>--------------------------.<<<<<<<<~~~~~>>>>>>>>: CS
+  sample_seq      1 ACUCGuUUGAgCGAGUAUAAACAGCUGGUUAAGCUCAAAGCG.GaGaGCaG*[2]*CuGCuCuCG 61    
+                    ACUCGU UGAGCGAGUAUAAACAGC   UUA GCUCA AGCG  AG:G::G     C::C:CU G
+  KJ489400.1 150952 ACUCGUGUGAGCGAGUAUAAACAGCC-UUUAGGCUCACAGCGuUAGGGAGG*[6]*CCUCUCUAG 151016
+                    *************************7.59*************889*99999..7..999****9* PP
+                    ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCG.GAGAGCAG~~~~~CUGCUCUCG RF
+
+>> KU737346.1  Bacillus phage Vinny, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (15) !    0.0074   41.7   0.0  cm        1       61 []      152020      152084 + .. 0.93    no 0.51
+
+                                                                                      NC
+                    <<<<<<____>>>>>>--------------------------.<<<<<<<<~~~~~>>>>>>>>: CS
+  sample_seq      1 ACUCGuUUGAgCGAGUAUAAACAGCUGGUUAAGCUCAAAGCG.GaGaGCaG*[2]*CuGCuCuCG 61    
+                    ACUCGU UGAGCGAGUAUAAACAGC   UUA GCUCA AGCG  AG:G::G     C::C:CU G
+  KU737346.1 152020 ACUCGUGUGAGCGAGUAUAAACAGCC-UUUAGGCUCACAGCGuUAGGGAGG*[6]*CCUCUCUAG 152084
+                    *************************7.59*************889*99999..7..999****9* PP
+                    ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCG.GAGAGCAG~~~~~CUGCUCUCG RF
+
+>> KF669647.1  Bacillus phage BigBertha, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (16) !    0.0076   41.7   0.0  cm        1       61 []      155754      155816 + .. 0.93    no 0.57
+
+                                                                                     NC
+                    <<<<<<____>>>>>>--------------------------<<<<<<<<...__>>>>>>>>: CS
+  sample_seq      1 ACUCGuUUGAgCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGaGaGCaG...AUCuGCuCuCG 61    
+                    ACUCGU UGAGCGAGUAUAAACAG    UUA GCUCA AGCG : :G::G   AUC::C: : G
+  KF669647.1 155754 ACUCGUGUGAGCGAGUAUAAACAGGC-UUUAGGCUCACAGCGUCGCGGGGuuuAUCCCCGUGGG 155816
+                    ***********************854.499********************76666********* PP
+                    ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGAGAGCAG...AUCUGCUCUCG RF
+
+>> KU737345.1  Bacillus phage Juglone, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (17) !    0.0076   41.7   0.0  cm        1       61 []      154884      154946 + .. 0.93    no 0.57
+
+                                                                                     NC
+                    <<<<<<____>>>>>>--------------------------<<<<<<<<...__>>>>>>>>: CS
+  sample_seq      1 ACUCGuUUGAgCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGaGaGCaG...AUCuGCuCuCG 61    
+                    ACUCGU UGAGCGAGUAUAAACAG    UUA GCUCA AGCG : :G::G   AUC::C: : G
+  KU737345.1 154884 ACUCGUGUGAGCGAGUAUAAACAGGC-UUUAGGCUCACAGCGUCGCGGGGuuuAUCCCCGUGGG 154946
+                    ***********************854.499********************76666********* PP
+                    ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGAGAGCAG...AUCUGCUCUCG RF
+
+>> KU737347.1  Bacillus phage Phrodo, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (18) !    0.0076   41.7   0.0  cm        1       61 []      155734      155796 + .. 0.93    no 0.57
+
+                                                                                     NC
+                    <<<<<<____>>>>>>--------------------------<<<<<<<<...__>>>>>>>>: CS
+  sample_seq      1 ACUCGuUUGAgCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGaGaGCaG...AUCuGCuCuCG 61    
+                    ACUCGU UGAGCGAGUAUAAACAG    UUA GCUCA AGCG : :G::G   AUC::C: : G
+  KU737347.1 155734 ACUCGUGUGAGCGAGUAUAAACAGGC-UUUAGGCUCACAGCGUCGCGGGGuuuAUCCCCGUGGG 155796
+                    ***********************854.499********************76666********* PP
+                    ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGAGAGCAG...AUCUGCUCUCG RF
+
+>> MN038178.1  Bacillus phage Beyonphe, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (19) !    0.0076   41.7   0.0  cm        1       61 []      155190      155252 + .. 0.93    no 0.57
+
+                                                                                     NC
+                    <<<<<<____>>>>>>--------------------------<<<<<<<<...__>>>>>>>>: CS
+  sample_seq      1 ACUCGuUUGAgCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGaGaGCaG...AUCuGCuCuCG 61    
+                    ACUCGU UGAGCGAGUAUAAACAG    UUA GCUCA AGCG : :G::G   AUC::C: : G
+  MN038178.1 155190 ACUCGUGUGAGCGAGUAUAAACAGGC-UUUAGGCUCACAGCGUCGCGGGGuuuAUCCCCGUGGG 155252
+                    ***********************854.499********************76666********* PP
+                    ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGAGAGCAG...AUCUGCUCUCG RF
+
+>> KF208639.2  Bacillus phage Troll, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (20) !    0.0079   41.6   0.0  cm        1       61 []      156075      156137 + .. 0.93    no 0.59
+
+                                                                                     NC
+                    <<<<<<____>>>>>>--------------------------<<<<<<<<...__>>>>>>>>: CS
+  sample_seq      1 ACUCGuUUGAgCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGaGaGCaG...AUCuGCuCuCG 61    
+                    ACUCGU UGAGCGAGUAUAAACAG    UUA GCUCA AGCG : :G::G   AUC::C: : G
+  KF208639.2 156075 ACUCGUGUGAGCGAGUAUAAACAGGC-UUUAGGCUCACAGCGUCGCGGGGcuuAUCCCCGUGGG 156137
+                    ***********************854.499********************76666********* PP
+                    ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGAGAGCAG...AUCUGCUCUCG RF
+
+>> CP009278.1  Sphingobacterium sp. ML3W, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (21) !    0.0095   41.3   0.0  cm        1       61 []     2800251     2800310 + .. 0.98    no 0.43
+
+                                                               v      v  v      v  NC
+                     <<<<<<____>>>>>>--------------------------<<<<<<<<__>>>>>>>>: CS
+  sample_seq       1 ACUCGuUUGAgCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGaGaGCaGAUCuGCuCuCG 61     
+                     A UCGUUUGAGCGA U  AAA AG U  UUAAGCUCAAAGCG :::G:: AU ::C::: G
+  CP009278.1 2800251 AGUCGUUUGAGCGACUUAAAAUAGGU-UUUAAGCUCAAAGCGCCCCGAUAAUAAUCGGGAG 2800310
+                     ************************98.499******************************* PP
+                     ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGAGAGCAGAUCUGCUCUCG RF
+
+>> CP045298.1  Paenibacillus brasilensis strain KACC 13842 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (22) !     0.031   39.4   0.0  cm        1       61 []     5377890     5377826 - .. 0.94    no 0.57
+
+                                                                                       NC
+                     <<<<<<____>>>>>>--------------------------<<<<<<<<.__...>>>>>>>>: CS
+  sample_seq       1 ACUCGuUUGAgCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGaGaGCaG.AU...CuGCuCuCG 61     
+                     ::UCGU UGAGCGA::  AAACAG    UUAAGCUCA AGCG ::A:C:G AU   C:G:U:: G
+  CP045298.1 5377890 GUUCGUCUGAGCGAACGCAAACAGGCCAUUAAGCUCAGAGCGUUCACCGGgAUcauCCGGUGAGG 5377826
+                     *************************************************9643334********* PP
+                     ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGAGAGCAG.AU...CUGCUCUCG RF
+
+>> KF669662.1  Bacillus phage Spock, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (23) !      0.09   37.7   0.0  cm        1       61 []      155100      155162 + .. 0.93    no 0.51
+
+                                                                                     NC
+                    <<<<<<____>>>>>>--------------------------<<<<<<<<...__>>>>>>>>: CS
+  sample_seq      1 ACUCGuUUGAgCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGaGaGCaG...AUCuGCuCuCG 61    
+                    ACUCGU U AGCGAGUAUAAA AG    UUA GCU A AGCG :G:G:AG   AUCU:C:C: G
+  KF669662.1 155100 ACUCGUGUAAGCGAGUAUAAAAAGGC-UUUAGGCUUACAGCGUCGCGGAGuuuAUCUCCGCGGG 155162
+                    *********************99843.499********************76666********* PP
+                    ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGAGAGCAG...AUCUGCUCUCG RF
+
+>> KR063281.1  Gordonia phage GMA2, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (24) !      0.11   37.3   0.0  cm        1       61 []       60079       60028 - .. 0.92    no 0.54
+
+                        v    v                                             NC
+                   <<<<<<____>>>>>>--------------------------<<<~~~~~~>>>: CS
+  sample_seq     1 ACUCGuUUGAgCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGaG*[12]*CuCG 61   
+                   ACUCG  UGA CGAGUAUAAACAG U  UUAAGCUCA AGCGG::      ::CG
+  KR063281.1 60079 ACUCGACUGAGCGAGUAUAAACAGUU-CUUAAGCUCAGAGCGGCC*[ 4]*GGCG 60028
+                   ************************88.59*************985...6..589* PP
+                   ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGAG~~~~~~CUCG RF
+
+>> KJ489402.1  Bacillus phage Riley, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (25) !      0.14   36.9   0.0  cm        1       61 []      153758      153819 + .. 0.81    no 0.53
+
+                                                              v  vvv       vvv  v  NC
+                    <<<<<<____>>>>>>--------------------------<<<<<<<~~~~~>>>>>>>: CS
+  sample_seq      1 ACUCGuUUGAgCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGaGaGCa*[4]*uGCuCuCG 61    
+                    ACUCGU UGAGCGAGUAUAAA AG    UUAAGCUCA AGCG :G G :     :   C: G
+  KJ489402.1 153758 ACUCGUGUGAGCGAGUAUAAAUAGGC-UUUAAGCUCACAGCGUCGCGGG*[8]*C--CCGCG 153819
+                    ***********************854.49*************6665555..5..4..5555* PP
+                    ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGAGAGCA~~~~~UGCUCUCG RF
+
+>> MF765814.1  Bacillus phage Taffo16, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (26) !      0.14   36.9   0.0  cm        1       61 []      155980      156041 + .. 0.81    no 0.53
+
+                                                              v  vvv       vvv  v  NC
+                    <<<<<<____>>>>>>--------------------------<<<<<<<~~~~~>>>>>>>: CS
+  sample_seq      1 ACUCGuUUGAgCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGaGaGCa*[4]*uGCuCuCG 61    
+                    ACUCGU UGAGCGAGUAUAAA AG    UUAAGCUCA AGCG :G G :     :   C: G
+  MF765814.1 155980 ACUCGUGUGAGCGAGUAUAAAUAGGC-UUUAAGCUCACAGCGUCGCGGG*[8]*C--CCGCG 156041
+                    ***********************854.49*************6665555..5..4..5555* PP
+                    ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGAGAGCA~~~~~UGCUCUCG RF
+
+>> CP000154.2  Paenibacillus polymyxa E681, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (27) !      0.23   36.2   0.0  cm        1       61 []     3364238     3364174 - .. 0.96    no 0.52
+
+                                                                                       NC
+                     <<<<<<____>>>>>>--------------------------<<<<<<<<_~~~~~>>>>>>>>: CS
+  sample_seq       1 ACUCGuUUGAgCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGaGaGCaGA*[1]*CuGCuCuCG 61     
+                     ::UCGU UGAGCGA::  AAACAG    UUAAGCUCA AGCG ::A:::GA     C:::U::  
+  CP000154.2 3364238 GUUCGUCUGAGCGAACGCAAACAGGCCAUUAAGCUCAGAGCGUUCACUGGA*[5]*CCAGUGAGA 3364174
+                     **************************************************8..5..********* PP
+                     ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGAGAGCAGA~~~~~CUGCUCUCG RF
+
+>> LN852800.1  Uncultured prokaryote from Rat gut metagenome metamobilome, plasmid pRGRH0110
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (28) !      0.93   33.9   0.0  cm        1       61 []        7754        7693 - .. 0.93    no 0.53
+
+                  v              v                                                NC
+                  <<<<<<____>>>>>>--------------------------<<<<<<<<__..>>>>>>>>: CS
+  sample_seq    1 ACUCGuUUGAgCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGaGaGCaGAU..CuGCuCuCG 61  
+                   CUCGU UG GCGAG AUAAACAGCU  UUAAGC CA AGCG :::G : AU   : C::: G
+  LN852800.1 7754 GCUCGUCUGGGCGAGGAUAAACAGCUA-UUAAGCCCAGAGCGUUCCGGUUAUauGAUCGGAGG 7693
+                  **************************5.9******************9986433789****** PP
+                  ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGAGAGCAGAU..CUGCUCUCG RF
+
+>> CP019039.1  Bacillus velezensis strain GH1-13 plasmid unnamed, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (29) !       1.7   32.9   0.0  cm        1       61 []        7984        8046 + .. 0.93    no 0.56
+
+                                                                                 NC
+                  <<<<<<____>>>>>>--------------------------<<<<<<<~~~~~>>>>>>>: CS
+  sample_seq    1 ACUCGuUUGAgCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGaGaGCa*[4]*uGCuCuCG 61  
+                  A UCGU UG GCGA UAUAAACAG    UUAAGCUCA AGCG ::: C:     :G ::: G
+  CP019039.1 7984 AGUCGUCUGGGCGACUAUAAACAGGC-AUUAAGCUCAGAGCGUCCUUCC*[7]*GGAAGGGG 8046
+                  ***********************975.69****************9997..7..7999**** PP
+                  ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGAGAGCA~~~~~UGCUCUCG RF
+
+>> LN852940.1  Uncultured prokaryote from Rat gut metagenome metamobilome, plasmid pRGRH0268
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (30) !       1.7   32.8   0.0  cm        1       61 []        1904        1844 - .. 0.98    no 0.56
+
+                  v              v                                               NC
+                  <<<<<<____>>>>>>--------------------------.<<<<<<<<__>>>>>>>>: CS
+  sample_seq    1 ACUCGuUUGAgCGAGUAUAAACAGCUGGUUAAGCUCAAAGCG.GaGaGCaGAUCuGCuCuCG 61  
+                   CUCGU UG GCGAG  UAAA AGCU  UUA GC CA AGCG  ::AG:A    U:CU:: G
+  LN852940.1 1904 GCUCGUCUGGGCGAGGGUAAAUAGCUAAUUAGGCCCAGAGCGuUCCAGGAUG-AUCCUGGAG 1844
+                  ******************************************889******9.********* PP
+                  ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCG.GAGAGCAGAUCUGCUCUCG RF
+
+>> JN790865.1  Bacillus phage B4, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (31) !       1.8   32.8   0.0  cm        1       61 []       35681       35620 - .. 0.83    no 0.56
+
+                                                             v  v             v  v  NC
+                   <<<<<<____>>>>>>--------------------------<<<<<<<<~~~~~>>>>>>>>: CS
+  sample_seq     1 ACUCGuUUGAgCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGaGaGCaG*[2]*CuGCuCuCG 61   
+                   A UCGU UGAGCGA UAUAAACAG    UUA GCUCA AGCG :G G::       ::C C: G
+  JN790865.1 35681 AGUCGUGUGAGCGACUAUAAACAGGC-UUUAGGCUCACAGCGUCGCGGGG*[4]*UCCCCCGUG 35620
+                   ***********************854.499************99977665..3..34555888* PP
+                   ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGAGAGCAG~~~~~CUGCUCUCG RF
+
+>> JN797796.1  Bacillus phage B5S, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (32) !       1.8   32.8   0.0  cm        1       61 []       35736       35675 - .. 0.83    no 0.56
+
+                                                             v  v             v  v  NC
+                   <<<<<<____>>>>>>--------------------------<<<<<<<<~~~~~>>>>>>>>: CS
+  sample_seq     1 ACUCGuUUGAgCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGaGaGCaG*[2]*CuGCuCuCG 61   
+                   A UCGU UGAGCGA UAUAAACAG    UUA GCUCA AGCG :G G::       ::C C: G
+  JN797796.1 35736 AGUCGUGUGAGCGACUAUAAACAGGC-UUUAGGCUCACAGCGUCGCGGGG*[4]*UCCCCCGUG 35675
+                   ***********************854.499************99977665..3..34555888* PP
+                   ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGAGAGCAG~~~~~CUGCUCUCG RF
+
+>> KY888882.1  Bacillus phage Flapjack, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (33) !       1.9   32.6   0.0  cm        1       61 []      156410      156472 + .. 0.89    no 0.56
+
+                                                              v                   v  NC
+                    <<<<<<____>>>>>>--------------------------<<<<<<<<~~~~~>>>>>>>>: CS
+  sample_seq      1 ACUCGuUUGAgCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGaGaGCaG*[2]*CuGCuCuCG 61    
+                    ACUC U UGAG GAGUAUAAACAG    UUA GCUCA AGCG :G: ::G     C:: :C: G
+  KY888882.1 156410 ACUCGUGUGAGUGAGUAUAAACAGGC-UUUAGGCUCACAGCGUCGCGGGG*[6]*CCCUGCG-G 156472
+                    ***********************854.499************99999999..5..8899999.* PP
+                    ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGAGAGCAG~~~~~CUGCUCUCG RF
+
+>> CP014843.1  Bacillus licheniformis strain SCDB 14 plasmid pSCDB14, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (34) !       3.5   31.7   0.0  cm        1       61 []       29638       29697 + .. 0.97    no 0.53
+
+                                                                                 NC
+                   <<<<<<____>>>>>>--------------------------<<<<<<<<__>>>>>>>>: CS
+  sample_seq     1 ACUCGuUUGAgCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGaGaGCaGAUCuGCuCuCG 61   
+                   A UCGU UG GCGA UAUAAACAG    UUAAGC CA AGCG   ::C   U  G::    
+  CP014843.1 29638 AGUCGUCUGGGCGACUAUAAACAGGC-AUUAAGCCCAGAGCGUUUCCCUUCUAGGGGAGGU 29697
+                   ***********************975.69******************************** PP
+                   ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGAGAGCAGAUCUGCUCUCG RF
+
+>> CP021670.1  Bacillus licheniformis strain SRCM100141 plasmid pBL141-2 sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (35) !       3.5   31.7   0.0  cm        1       61 []       37922       37863 - .. 0.97    no 0.53
+
+                                                                                 NC
+                   <<<<<<____>>>>>>--------------------------<<<<<<<<__>>>>>>>>: CS
+  sample_seq     1 ACUCGuUUGAgCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGaGaGCaGAUCuGCuCuCG 61   
+                   A UCGU UG GCGA UAUAAACAG    UUAAGC CA AGCG   ::C   U  G::    
+  CP021670.1 37922 AGUCGUCUGGGCGACUAUAAACAGGC-AUUAAGCCCAGAGCGUUUCCCUUCUAGGGGAGGU 37863
+                   ***********************975.69******************************** PP
+                   ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGAGAGCAGAUCUGCUCUCG RF
+
+>> CP035189.1  Bacillus licheniformis strain SRCM103914 plasmid unnamed1, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (36) !       3.5   31.7   0.0  cm        1       61 []      167253      167194 - .. 0.97    no 0.53
+
+                                                                                  NC
+                    <<<<<<____>>>>>>--------------------------<<<<<<<<__>>>>>>>>: CS
+  sample_seq      1 ACUCGuUUGAgCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGaGaGCaGAUCuGCuCuCG 61    
+                    A UCGU UG GCGA UAUAAACAG    UUAAGC CA AGCG   ::C   U  G::    
+  CP035189.1 167253 AGUCGUCUGGGCGACUAUAAACAGGC-AUUAAGCCCAGAGCGUUUCCCUUCUAGGGGAGGU 167194
+                    ***********************975.69******************************** PP
+                    ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGAGAGCAGAUCUGCUCUCG RF
+
+>> CP045906.1  Caligus rogercresseyi isolate FCH chromosome 17
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (37) !       3.6   31.7   0.0  cm        1       61 []    14639513    14639571 + .. 0.94    no 0.42
+
+                                                                      v    v        NC
+                      <<<<<<____>>>>>>--------------------------<<<<<<<<__>>>>>>>>: CS
+  sample_seq        1 ACUCGuUUGAgCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGaGaGCaGAUCuGCuCuCG 61      
+                       CU:G:UUGA:C:AG AUAAA AGCUG   A    CAAAG G : :GC      GC: : G
+  CP045906.1 14639513 UCUUGCUUGAGCAAGAAUAAAGAGCUGUACAUAAGCAAAGAGUCUUGCCU--GAGCAAGAG 14639571
+                      ***************************999999999***********943..569****** PP
+                      ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGAGAGCAGAUCUGCUCUCG RF
+
+>> HG916826.1  Pseudomonas pseudoalcaligenes CECT 5344 complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (38) !       4.2   31.4   0.0  cm        1       61 []      843085      843030 - .. 1.00    no 0.66
+
+                                                              vvvvv        vvvvv  NC
+                    <<<<<<____>>>>>>--------------------------<<<<<<<<__>>>>>>>>: CS
+  sample_seq      1 ACUCGuUUGAgCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGaGaGCaGAUCuGCuCuCG 61    
+                    :C:CG:U G :CG:G:A  A CA CU GU AAGCUCAAAGCG A   C:G  C:G     G
+  HG916826.1 843085 CCCCGCUGGCGCGGGGAACACCACCUUGUCAAGCUCAAAGCGAAAUUCGGGGCCG-----G 843030
+                    *******************************************************.....* PP
+                    ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGAGAGCAGAUCUGCUCUCG RF
+
+>> LK391695.1  Pseudomonas pseudoalcaligenes genome assembly Ppseudo_Pac, chromosome : I
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (39) !       4.2   31.4   0.0  cm        1       61 []      845304      845249 - .. 1.00    no 0.66
+
+                                                              vvvvv        vvvvv  NC
+                    <<<<<<____>>>>>>--------------------------<<<<<<<<__>>>>>>>>: CS
+  sample_seq      1 ACUCGuUUGAgCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGaGaGCaGAUCuGCuCuCG 61    
+                    :C:CG:U G :CG:G:A  A CA CU GU AAGCUCAAAGCG A   C:G  C:G     G
+  LK391695.1 845304 CCCCGCUGGCGCGGGGAACACCACCUUGUCAAGCUCAAAGCGAAAUUCGGGGCCG-----G 845249
+                    *******************************************************.....* PP
+                    ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGAGAGCAGAUCUGCUCUCG RF
+
+>> XM_028713395.1  PREDICTED: Podarcis muralis solute carrier family 16 member 6 (SLC16A6), mRNA
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (40) !         5   31.1   0.0  cm        1       61 []          30          87 + .. 0.95    no 0.62
+
+                                                              v                v  NC
+                    <<<<<<____>>>>>>--------------------------<<<<<<<<__>>>>>>>>: CS
+      sample_seq  1 ACUCGuUUGAgCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGaGaGCaGAUCuGCuCuCG 61
+                    AC: G:U GA:C :GUAUAAA AGCU   U AGCUC A     :::GCAG  CUGC::: G
+  XM_028713395.1 30 ACCGGCUCGAGCCGGUAUAAAAAGCU---UGAGCUCGAGCACAGCGGCAGCACUGCCGCAG 87
+                    *************************7...669****9988889*******99********* PP
+                    ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGAGAGCAGAUCUGCUCUCG RF
+
+>> AC100771.2  Homo sapiens chromosome 11, clone RP11-159H22, complete sequence
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (41) !       6.2   30.7   0.9  cm        1       61 []      133706      133648 - .. 0.96    no 0.22
+
+                                                               v              v   NC
+                    <<<<<<____>>>>>>--------------------------<<<<<<<<__>>>>>>>>: CS
+  sample_seq      1 ACUCGuUUGAgCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGaGaGCaGAUCuGCuCuCG 61    
+                     :UC:UUUG G:GA: AUAAA AG  G UUA  CUCAAAGC   :A::A:A :U::U:   
+  AC100771.2 133706 GUUCAUUUGGGUGAAUAUAAAAAGGAGAUUA--CUCAAAGCUUUAAAAAAAAUUUUUUUAA 133648
+                    ******************************9..9********9888888888********* PP
+                    ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGAGAGCAGAUCUGCUCUCG RF
+
+>> CP022654.2  Bacillus velezensis strain SCDB 291 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (42) !       6.7   30.6   0.0  cm        1       61 []       63818       63880 + .. 0.93    no 0.56
+
+                                                                                  NC
+                   <<<<<<____>>>>>>--------------------------<<<<<<<~~~~~>>>>>>>: CS
+  sample_seq     1 ACUCGuUUGAgCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGaGaGCa*[4]*uGCuCuCG 61   
+                   A UCGU UG GCGA UAUAAACAG    UUAAGC CA AGCG ::: C:     :G ::: G
+  CP022654.2 63818 AGUCGUCUGGGCGACUAUAAACAGAC-AUUAAGCCCAGAGCGUCCUUCC*[7]*GGAAGGGG 63880
+                   ************************86.69*****************997..7..899***** PP
+                   ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGAGAGCA~~~~~UGCUCUCG RF
+
+>> CP023320.1  Bacillus velezensis strain SCGB 1 chromosome, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (43) !       6.7   30.6   0.0  cm        1       61 []       44833       44771 - .. 0.93    no 0.56
+
+                                                                                  NC
+                   <<<<<<____>>>>>>--------------------------<<<<<<<~~~~~>>>>>>>: CS
+  sample_seq     1 ACUCGuUUGAgCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGaGaGCa*[4]*uGCuCuCG 61   
+                   A UCGU UG GCGA UAUAAACAG    UUAAGC CA AGCG ::: C:     :G ::: G
+  CP023320.1 44833 AGUCGUCUGGGCGACUAUAAACAGAC-AUUAAGCCCAGAGCGUCCUUCC*[7]*GGAAGGGG 44771
+                   ************************86.69*****************997..7..899***** PP
+                   ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGAGAGCA~~~~~UGCUCUCG RF
+
+>> CP045899.1  Caligus rogercresseyi isolate FCH chromosome 10
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (44) !         7   30.6   0.0  cm        1       61 []     5107513     5107456 - .. 0.96    no 0.40
+
+                                                                      v  v         NC
+                     <<<<<<____>>>>>>--------------------------<<<<<<<<__>>>>>>>>: CS
+  sample_seq       1 ACUCGuUUGAgCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGaGaGCaGAUCuGCuCuCG 61     
+                      CU:G:UUGA:C:AG AUAAA AG UG   A    CAAAG G : :GC:G   :GC: : G
+  CP045899.1 5107513 UCUUGCUUGAGCAAGAAUAAAGAGAUGUACAUAAGCAAAGAGUCUUGCUG---AGCAAGAG 5107456
+                     ***************************999999999************85...59****** PP
+                     ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGAGAGCAGAUCUGCUCUCG RF
+
+>> CP045890.1  Caligus rogercresseyi isolate FCH chromosome 1
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (45) !         7   30.6   0.0  cm        1       61 []     2686952     2687009 + .. 0.96    no 0.40
+
+                                                                      v  v         NC
+                     <<<<<<____>>>>>>--------------------------<<<<<<<<__>>>>>>>>: CS
+  sample_seq       1 ACUCGuUUGAgCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGaGaGCaGAUCuGCuCuCG 61     
+                      CU:G:UUGA:C:AG AUAAA AG UG   A    CAAAG G : :GC:G   :GC: : G
+  CP045890.1 2686952 UCUUGCUUGAGCAAGAAUAAAGAGAUGUACAUAAGCAAAGAGUCUUGCUG---AGCAAGAG 2687009
+                     ***************************999999999************85...59****** PP
+                     ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGAGAGCAGAUCUGCUCUCG RF
+
+>> CP010557.1  Raoultella ornithinolytica strain S12, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (46) !       7.5   30.5   0.0  cm        1       61 []     4528803     4528858 + .. 0.96    no 0.50
+
+                          v    v                                 v             v    NC
+                     <<<<<<____>>>>>>--------------------------<<<<<<<<__.>>>>>>>>: CS
+  sample_seq       1 ACUCGuUUGAgCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGaGaGCaGAU.CuGCuCuCG 61     
+                     : UCG  UGA CGA :AUAAAC G  GGUUAAGCU        : :GCAGAU CUGC: : G
+  CP010557.1 4528803 CGUCGCCUGAACGACGAUAAACUGAAGGUUAAGCUA------UCAGGCAGAUuCUGCCAGAG 4528858
+                     **********************************96......8889****966********* PP
+                     ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGAGAGCAGAU.CUGCUCUCG RF
+
+>> LR134253.1  Klebsiella aerogenes strain NCTC9997 genome assembly, chromosome: 3
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (47) !       7.5   30.5   0.0  cm        1       61 []     1479651     1479596 - .. 0.96    no 0.50
+
+                          v    v                                 v             v    NC
+                     <<<<<<____>>>>>>--------------------------<<<<<<<<__.>>>>>>>>: CS
+  sample_seq       1 ACUCGuUUGAgCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGaGaGCaGAU.CuGCuCuCG 61     
+                     : UCG  UGA CGA :AUAAAC G  GGUUAAGCU        : :GCAGAU CUGC: : G
+  LR134253.1 1479651 CGUCGCCUGAACGACGAUAAACUGAAGGUUAAGCUA------UCAGGCAGAUuCUGCCAGAG 1479596
+                     **********************************96......8889****966********* PP
+                     ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGAGAGCAGAU.CUGCUCUCG RF
+
+>> MH153801.1  Microbacterium phage Count, complete genome
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (48) !       7.7   30.4   0.0  cm        1       61 []       58164       58217 + .. 0.89    no 0.44
+
+                                                                 vvvv  vvvv      NC
+                   <<<<<<____>>>>>>--------------------------<<<<<<<<__>>>>>>>>: CS
+  sample_seq     1 ACUCGuUUGAgCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGaGaGCaGAUCuGCuCuCG 61   
+                   A UCGU UGAGCGA U UAAA AG U  UUA GCUCA AGCG A AG  G      U U G
+  MH153801.1 58164 AGUCGUCUGAGCGACUUUAAAUAGGU-CUUAGGCUCAGAGCGGAUAGAUG------UAUUG 58217
+                   ************************98.49**************9985433......4566* PP
+                   ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGAGAGCAGAUCUGCUCUCG RF
+
+>> CP045896.1  Caligus rogercresseyi isolate FCH chromosome 7
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (49) !       8.9   30.2   0.0  cm        1       61 []      486401      486459 + .. 0.96    no 0.39
+
+                                                                    vv  vv        NC
+                    <<<<<<____>>>>>>--------------------------<<<<<<<<__>>>>>>>>: CS
+  sample_seq      1 ACUCGuUUGAgCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGaGaGCaGAUCuGCuCuCG 61    
+                     CU:G:UUGA:C:AG AUAAA AG UG   A    CAAAG G : :GC  AU +GC: : G
+  CP045896.1 486401 UCUUGCUUGAGCAAGAAUAAAGAGAUGUACAUAAGCAAAGAGUCUUGC--AUGAGCAAGAG 486459
+                    ***************************999999999***********9..7778******* PP
+                    ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGAGAGCAGAUCUGCUCUCG RF
+
+>> CP045901.1  Caligus rogercresseyi isolate FCH chromosome 12
+ rank     E-value  score  bias mdl mdl from   mdl to       seq from      seq to       acc trunc   gc
+ ----   --------- ------ ----- --- -------- --------    ----------- -----------      ---- ----- ----
+ (50) !       8.9   30.2   0.0  cm        1       61 []     8022709     8022767 + .. 0.96    no 0.39
+
+                                                                     vv  vv        NC
+                     <<<<<<____>>>>>>--------------------------<<<<<<<<__>>>>>>>>: CS
+  sample_seq       1 ACUCGuUUGAgCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGaGaGCaGAUCuGCuCuCG 61     
+                      CU:G:UUGA:C:AG AUAAA AG UG   A    CAAAG G : :GC  AU +GC: : G
+  CP045901.1 8022709 UCUUGCUUGAGCAAGAAUAAAGAGAUGUACAUAAGCAAAGAGUCUUGC--AUGAGCAAGAG 8022767
+                     ***************************999999999***********9..7778******* PP
+                     ACUCGUUUGAGCGAGUAUAAACAGCUGGUUAAGCUCAAAGCGGAGAGCAGAUCUGCUCUCG RF
+
+
+
+Internal CM pipeline statistics summary:
+----------------------------------------
+Query model(s):                                                  1  (61 consensus positions)
+Target sequences:                                         55908648  (521445832080 residues searched)
+Target sequences re-searched for truncated hits:          55908648  (17168985450 residues re-searched)
+Windows   passing  local HMM SSV           filter:       385878327  (0.06675); expected (0.06)
+Windows   passing  local HMM Viterbi       filter:        99069721  (0.01733); expected (0.02)
+Windows   passing  local HMM Viterbi  bias filter:        92169505  (0.01613); expected (0.02)
+Windows   passing  local HMM Forward       filter:         1815038  (0.0003447); expected (0.0002)
+Windows   passing  local HMM Forward  bias filter:         1629372  (0.0003097); expected (0.0002)
+Windows   passing glocal HMM Forward       filter:         1249863  (0.0002411); expected (0.0002)
+Windows   passing glocal HMM Forward  bias filter:         1227632  (0.0002363); expected (0.0002)
+Envelopes passing glocal HMM envelope defn filter:         1187601  (0.0001659); expected (0.0002)
+Envelopes passing  local CM  CYK           filter:          627614  (7.919e-05); expected (0.0001)
+Total CM hits reported:                                         50  (5.882e-09); includes 2 truncated hit(s)
+
+# CPU time: 33051.88u 951.44s 09:26:43.32 Elapsed: 00:44:22.54
+# Alignment of 50 hits satisfying inclusion thresholds saved to: /home/jaswinder/github/SPOT-RNA2/inputs/sample_seq_features/sample_seq.msa
+//
+[ok]
