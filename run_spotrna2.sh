@@ -7,10 +7,10 @@ input_dir=$(dirname $input)
 seq_id=$(basename $(basename $input) | cut -d. -f1)
 program_dir=$(dirname $(readlink -f $0))
 
-path_blastn=$program_dir/ncbi-blast-2.10.*+/bin
-path_blastn_database=$program_dir/nt_database/nt
-path_infernal=$program_dir/infernal-1.1.3-linux-intel-gcc/binaries
-path_infernal_database=$program_dir/nt_database/nt
+path_blastn=$program_dir/ncbi-blast-2.10.*+/bin       				# set here path to the folder contains executable binary files of Blast package
+path_blastn_database=$program_dir/nt_database/nt      				# set here path to the formatted NCBI's database file without extension 
+path_infernal=$program_dir/infernal-1.1.3-linux-intel-gcc/binaries  # set here path to the folder contains executable binary files Infernal package
+path_infernal_database=$program_dir/nt_database/nt					# set here path to the NCBI's database database file
 
 mkdir -p $input_dir/${seq_id}_features && mkdir -p $input_dir/${seq_id}_outputs
 echo ">"$seq_id > $input_dir/${seq_id}_features/$seq_id.fasta
@@ -41,7 +41,7 @@ if [ ! -f $path_blastn_database ];  then
                 echo "       Start downloading nt database form ftp://ftp.ncbi.nlm.nih.gov/blast/db/FASTA/nt.gz link. May take few hours to download. "
                 echo "======================================================================================================================================"
                 echo ""
-                wget -c "ftp://ftp.ncbi.nlm.nih.gov/blast/db/FASTA/nt.gz" -O /nt_database/nt.gz
+                wget -c "ftp://ftp.ncbi.nlm.nih.gov/blast/db/FASTA/nt.gz" -O $program_dir/nt_database/nt.gz
 
         
                 if [[ $? -eq 0 ]]; then 
@@ -66,7 +66,7 @@ if [ ! -f $path_blastn_database ];  then
                 echo ""
                 
         ############ unzip the nt data base file ############
-                gunzip /nt_database/nt.gz
+                gunzip $program_dir/nt_database/nt.gz
 
         else
                 exit 1
