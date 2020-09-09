@@ -92,7 +92,7 @@ if [ ! -f $path_blastn_database ];  then
     else
 		echo ""
 		echo "==========================================================="
-		echo "      Existing the program because nt database is missing! "
+		echo "      Exiting the program because nt database is missing! "
 		echo "==========================================================="
 		echo ""
         exit 1
@@ -159,7 +159,7 @@ else
     else
         echo ""
         echo "==========================================================================================================================="
-        echo "      Start Running BLASTN for first round of homologous sequence search for query sequence $feature_dir/$seq_id.fasta.    "
+        echo "      Running BLASTN for first round of homologous sequence search for query sequence $feature_dir/$seq_id.fasta.          "
         echo "      May take 5 mins to few hours depending on sequence length and no. of homologous sequences in database.               "
         echo "==========================================================================================================================="
         echo ""

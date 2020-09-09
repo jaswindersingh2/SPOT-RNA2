@@ -45,11 +45,11 @@ sub wfreq
         if($line =~ /^>(\S+)/)
         {
             my $Pname=$1;            
-            my $Evalue= $1 if($line =~ /E=(\S+)/);
-	    last if($Evalue>$ecut);
+#            my $Evalue= $1 if($line =~ /E=(\S+)/);
+#	    last if($Evalue>$ecut);
 	    $Pcount++;
             $ALN{$Pcount, 0}=$Pname;
-            $ALN{$Pcount, 1}=$Evalue;
+#            $ALN{$Pcount, 1}=$Evalue;
         }
         else
         {
