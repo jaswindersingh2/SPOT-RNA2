@@ -36,7 +36,7 @@ Either follow **virtualenv** column steps or **conda** column steps to create vi
 | :- | :-------- | :--- |
 | 5. | `virtualenv -p python3.6 venv` | `conda create -n venv python=3.6` |
 | 6. | `source ./venv/bin/activate` | `conda activate venv` | 
-| 7. | `pip install -r requirements.txt` | `while read p; do conda install --yes $p; done < requirements.txt` | 
+| 7. | `pip install -r requirements.txt && deactivate` | `while read p; do conda install --yes $p; done < requirements.txt && conda deactivate` | 
 
 If Infernal tool is already installed in the system, please add path to the folder contains binary files in line no. 12 of `run_spotrna2.sh` file. In case, Infernal tool is not installed in the system, please use the follwing command to download. In case of any problem regarding Infernal download, please refer to [Infernal webpage](http://eddylab.org/infernal/) as following commands only tested on Ubuntu 18.04, 64 bit system.
 
