@@ -67,7 +67,7 @@ If NCBI's nt database already available in your system, please set path to the d
 
 Database needs to be formated for using in **BLASTN**. Please follow the command below to format the database.<br />
 
-16. `./ncbi-blast-2.10.0+/bin/makeblastdb -in ./nt_database/nt -dbtype nucl`
+16. `./ncbi-blast-*+/bin/makeblastdb -in ./nt_database/nt -dbtype nucl`
 
 
 To run the SPOT-RNA2
