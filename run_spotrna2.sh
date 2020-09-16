@@ -7,10 +7,10 @@ input_dir=$(dirname $input)
 seq_id=$(basename $(basename $input) | cut -d. -f1)
 program_dir=$(dirname $(readlink -f $0))
 
-path_blastn=$program_dir/ncbi-blast-2.10.*+/bin       				# set here path to the folder contains executable binary files of Blast package
-path_blastn_database=$program_dir/nt_database/nt      				# set here path to the formatted NCBI's database file without extension 
-path_infernal=$program_dir/infernal-1.1.3-linux-intel-gcc/binaries  # set here path to the folder contains executable binary files Infernal package
-path_infernal_database=$program_dir/nt_database/nt					# set here path to the NCBI's database database file
+path_blastn=$program_dir/ncbi-blast-2.10.*+/bin       				# set path to the folder contains executable binary files of Blast package
+path_blastn_database=$program_dir/nt_database/nt      				# set path to the formatted NCBI's database file without extension 
+path_infernal=$program_dir/infernal-1.1.3-linux-intel-gcc/binaries  # set path to the folder contains executable binary files Infernal package
+path_infernal_database=$program_dir/nt_database/nt					# set path to the NCBI's database database file
 
 mkdir -p $input_dir/${seq_id}_features && mkdir -p $input_dir/${seq_id}_outputs
 echo ">"$seq_id > $input_dir/${seq_id}_features/$seq_id.fasta

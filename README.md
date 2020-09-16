@@ -1,6 +1,7 @@
 # SPOT-RNA2
 Improved RNA Secondary Structure and Tertiary Base-pairing Prediction using Evolutionary Profile, Mutational Coupling and Two-dimensional Transfer Learning.
 
+
 SYSTEM REQUIREMENTS
 ====
 Hardware Requirments:
@@ -30,7 +31,7 @@ To install SPOT-RNA2 and its dependencies following commands can be used in the 
 3. `tar -xvf utils/models_ckps.tar.xz -C utils/ && rm utils/models_ckps.tar.xz`
 4. `sudo apt install cpanminus && sudo cpanm Graph && sudo apt install gawk`
 
-Either follow **virtualenv** column steps or **conda** column steps to create a virtual environment and to install SPOT-RNA2 python dependencies given in the table below:<br />
+Based on the virtual environment package manager (**virtualenv** or **conda**) you have follow the stpes below:<br />
 
 |  | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; virtualenv | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; conda |
 | :- | :-------- | :--- |
@@ -38,33 +39,33 @@ Either follow **virtualenv** column steps or **conda** column steps to create a 
 | 6. | `source ./venv/bin/activate` | `conda activate venv` | 
 | 7. | `pip install -r requirements.txt && deactivate` | `while read p; do conda install --yes $p; done < requirements.txt && conda deactivate` | 
 
-If the Infernal tool is already installed in the system, please add a path to the folder contains binary files in line no. 12 of the `run_spotrna2.sh` file. In case, the Infernal tool is not installed in the system, please use the following command to download. In case of any problem regarding Infernal download, please refer to the [Infernal webpage](http://eddylab.org/infernal/) as the following commands only tested on Ubuntu 18.04, 64-bit system.
+If you have **Infernal** already installed, please set `binaries/` directory path of **Infernal** installation in line 12 of the `run_spotrna2.sh`. Otherwise, follow commands below to install **Infernal** tool. If you run into issue, please follow the [link](http://eddylab.org/infernal/) for more info.
 
 8. `wget 'eddylab.org/infernal/infernal-1.1.3-linux-intel-gcc.tar.gz' && tar -xvzf infernal-*.tar.gz && rm infernal-*.tar.gz`
 
-If the BLASTN tool is already installed in the system, please add a path to the folder contains binary files in line no. 10 of the `run_spotrna2.sh` file. In case, the BLASTN tool is not installed in the system, please use the following command to download. In case of any problem regarding BLASTN download, please refer to the [BLASTN webpage](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlasstDocs&DOC_TYPE=Download) as the following commands only tested on Ubuntu 18.04, 64-bit system.
+If you have **BLASTN** already installed, please set `binaries/` directory path of **BLASTN** installation in line 10 of the `run_spotrna2.sh`. Otherwise, follow commands below to install **BLASTN** tool. If you run into issue, please follow the [link](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlasstDocs&DOC_TYPE=Download) for more info.
 
 9. `wget 'ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-*+-x64-linux.tar.gz' && tar -xvzf ncbi-blast-*+-x64-linux.tar.gz && rm ncbi-blast-*+-x64-linux.tar.gz`
 
-To install the **SPOT-RNA** predictor to obtain a consensus secondary structure for the MSA-1 from BLASTN, the following three commands can be used.<br />
+To install the **SPOT-RNA** predictor, follow the commands below:<br />
 
 10. `git clone https://github.com/jaswindersingh2/SPOT-RNA.git && cd SPOT-RNA`
 11. `wget 'https://www.dropbox.com/s/dsrcf460nbjqpxa/SPOT-RNA-models.tar.gz' || wget -O SPOT-RNA-models.tar.gz 'https://app.nihaocloud.com/f/fbf3315a91d542c0bdc2/?dl=1'`
 12. `tar -xvzf SPOT-RNA-models.tar.gz && rm SPOT-RNA-models.tar.gz && cd ../`
 
-To install the DCA predictor, the following command can be used:<br />
+To install the DCA predictor, follow the commands below:<br />
 
 13. `git clone "https://github.com/sokrypton/GREMLIN_CPP" && cd GREMLIN_CPP && g++ -O3 -std=c++0x -o gremlin_cpp gremlin_cpp.cpp -fopenmp && cd ../`
 
-To install the LinearPartition, the following command can be used:<br />
+To install the LinearPartition, follow the commands below:<br />
 
 14. `git clone 'https://github.com/LinearFold/LinearPartition.git' && cd LinearPartition/ && make && cd ../`
 
-If NCBI's nt database already available in your system, please add a path to the database in line no. 11 and line 13 of the `run_spotrna.sh` file. Otherwise, download the reference database (NCBI's nt database) for BLASTN and INFERNAL. The following command can be used for NCBI's nt database download. Make sure there is enough space on the system as the database is of size around 270 GB after extraction and it can take a couple of hours to download depending on the internet bandwidth. In case of any problem, please refer to [NCBI's database website](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDocs&DOC_TYPE=Download).
+If NCBI's nt database already available in your system, please set path to the database directory in line 11 and 13 of the `run_spotrna.sh` file. Otherwise, use the following command to download. It can take few hours the download to finish depending on your internet speed. If you run into issue, please follow the [link](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDocs&DOC_TYPE=Download) for more info.
 
 15. `wget -c "ftp://ftp.ncbi.nlm.nih.gov/blast/db/FASTA/nt.gz" -O ./nt_database/nt.gz && gunzip ./nt_database/nt.gz`
 
-The database needs to formated to use with the BLASTN tool. To format it, the following command can be used. Please make the sure system has enough space as the formatted database is of size around 120 GB in addition to approx. 270 GB from the previous step and it can a few hours for it.
+Database needs to be formated for using in **BLASTN**. Please follow the command below to format the database.<br />
 
 16. `./ncbi-blast-2.10.0+/bin/makeblastdb -in ./nt_database/nt -dbtype nucl`
 
@@ -76,14 +77,14 @@ To run the SPOT-RNA2
 ./run_spotrna2.sh sample_run/6ufj.fasta 
 ```
 
-The above command creates two folder `6ufj_features` and `6ufj_outputs` under the folder contains input file (`sample_run/` folder in this case). `6ufj_features/` contains all the alignments (MSA-1, MSA-2) and features (PSSM, DCA, bps probability) generated from SPOT-RNA2 pipeline. `6ufj_outputs/` contains predicted secondary structure in bpseq format (`6ufj.bpseq`), ct format (`6ufj.ct`), dbn format (`6ufj.st`) with secondary structure motifs, and base-pair probability (`6ufj.prob`). The verify the results, it should be as in `sample_seq_features` and `sample_seq_outputs` folder because both sequences (`sample_seq.fasta` and `6ufj.fasta`) are same.
+The above command creates two folder `6ufj_features` and `6ufj_outputs` in input file directory (`sample_run/` in this case). `6ufj_features/` contains all the alignments (MSA-1, MSA-2) and features (PSSM, DCA, bps probability) generated from SPOT-RNA2 pipeline. `6ufj_outputs/` contains predicted secondary structure in bpseq format (`6ufj.bpseq`), ct format (`6ufj.ct`), dbn format (`6ufj.st`) with secondary structure motifs, and base-pair probability (`6ufj.prob`). The verify the results, it should be same as in `sample_seq_features` and `sample_seq_outputs` folder because both sequence (`sample_seq.fasta` and `6ufj.fasta`) are same.
 
 References
 ====
 
 **If you use SPOT-RNA2 for your research please cite the following papers:**
 
-Singh, J., Paliwal, K., Zhang, T., Singh, J., Litfin, T., Zhou, Y., 2020. Improved RNA Secondary Structure and Tertiary Base-pairing Prediction using Evolutionary Profile, Mutational Coupling and Two-dimensional Transfer Learning. (submitting soon)
+Singh, J., Paliwal, K., Zhang, T., Singh, J., Litfin, T., Zhou, Y., 2020. Improved RNA Secondary Structure and Tertiary Base-pairing Prediction using Evolutionary Profile, Mutational Coupling and Two-dimensional Transfer Learning.
 
 **If you use SPOT-RNA2 data sets and/or input feature pipeline, please consider citing the following papers:**
 
