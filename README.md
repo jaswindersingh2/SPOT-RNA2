@@ -79,12 +79,24 @@ To run the SPOT-RNA2
 
 The above command creates two folder `6ufj_features` and `6ufj_outputs` in input file directory (`sample_run/` in this case). `6ufj_features/` contains all the alignments (MSA-1, MSA-2) and features (PSSM, DCA, bps probability) generated from SPOT-RNA2 pipeline. `6ufj_outputs/` contains predicted secondary structure in bpseq format (`6ufj.bpseq`), ct format (`6ufj.ct`), dbn format (`6ufj.st`) with secondary structure motifs, and base-pair probability (`6ufj.prob`). The verify the results, it should be same as in `sample_seq_features` and `sample_seq_outputs` folder because both sequence (`sample_seq.fasta` and `6ufj.fasta`) are same.
 
+Datasets
+===
+
+The following datasets were used for Initial Training:
+* bpRNA[1]: Initial Learning (Training TR0, validation VL0, and test TS0)  
+[Dropbox](https://www.dropbox.com/s/sg1p1otsqnaqev8/bpRNA_dataset.tar.xz) or [Nihao Cloud](https://app.nihaocloud.com/f/6f7b456d874c4842b8ac/)
+
+
+The following datasets were used for Transfer Learning:
+* PDB[2]: Transfer Learning (Training TR1, validation VL1, and testsets TS1, TS2, TS3, and TS_hard)  
+[Dropbox](https://www.dropbox.com/s/apqrsl7hm1091ie/PDB_dataset.tar.xz) or [Nihao Cloud](https://app.nihaocloud.com/f/f301baed4dac4474a185/)
+
 References
 ====
 
 **If you use SPOT-RNA2 for your research please cite the following papers:**
 
-Singh, J., Paliwal, K., Zhang, T., Singh, J., Litfin, T., Zhou, Y., 2020. Improved RNA Secondary Structure and Tertiary Base-pairing Prediction using Evolutionary Profile, Mutational Coupling and Two-dimensional Transfer Learning.
+Singh, J., Paliwal, K., Zhang, T., Singh, J., Litfin, T., Zhou, Y., 2020. Improved RNA Secondary Structure and Tertiary Base-pairing Prediction using Evolutionary Profile, Mutational Coupling and Two-dimensional Transfer Learning. (Under review)
 
 **If you use SPOT-RNA2 data sets and/or input feature pipeline, please consider citing the following papers:**
 
