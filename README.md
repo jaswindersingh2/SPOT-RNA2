@@ -31,7 +31,7 @@ The new method allows large improvement not only in canonical base-pairs (RNA se
 | <p align="center"> <b>Figure 2:</b> Distribution of F1-scores for individual RNAs on the combined test sets TS1, TS2, and TS3 given by various methods as labeled. On each box, the central mark indicates the median, and the bottom and top edges of the box indicate the 25th and 75th percentiles, respectively. The outliers are plotted individually by using the “+” symbol.|
 
 
-SYSTEM REQUIREMENTS
+System Requirments
 ----
 
 **Hardware Requirments:**
@@ -43,7 +43,7 @@ It is recommended that your system should have 32 GB RAM, 500 GB disk space to s
 * [virtualenv](https://virtualenv.pypa.io/en/latest/installation/) or [Anaconda](https://anaconda.org/anaconda/virtualenv)
 * [CUDA 10.0](https://developer.nvidia.com/cuda-10.0-download-archive) (Optional if using GPU)
 * [cuDNN (>= 7.4.1)](https://developer.nvidia.com/cudnn) (Optional if using GPU)
-* [Docker](https://docs.docker.com/engine/install/) (Optional if using docker fully configured docker image)
+* [Docker](https://docs.docker.com/engine/install/) (Optional if runnig SPOT-RNA2 through docker image)
 
 SPOT-RNA2 has been tested on Ubuntu 14.04, 16.04, and 18.04 operating systems.
 
