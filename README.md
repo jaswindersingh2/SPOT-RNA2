@@ -47,9 +47,20 @@ It is recommended that your system should have 32 GB RAM, 500 GB disk space to s
 SPOT-RNA2 has been tested on Ubuntu 14.04, 16.04, and 18.04 operating systems.
 
 
-## Installation:
+## Installation
+
+# Installation using Docker image:
+
+The following command can be used to install SPOT-RNA2 and its dependencies:
+
+1. `git clone https://github.com/jaswindersingh2/SPOT-RNA2.git && cd SPOT-RNA2`
+
+2. `docker image build .`
+
+# Mannual installation:
 
 To install SPOT-RNA2 and its dependencies following commands can be used in the terminal:
+
 
 1. `git clone https://github.com/jaswindersingh2/SPOT-RNA2.git && cd SPOT-RNA2`
 2. `wget -O utils/models_ckps.tar.xz 'https://www.dropbox.com/s/udzcsva76lh5wvq/models_ckps.tar.xz' || wget -O utils/models_ckps.tar.xz 'https://app.nihaocloud.com/f/586acb2658d74ccb92b8/?dl=1'`
