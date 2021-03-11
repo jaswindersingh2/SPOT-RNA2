@@ -13,8 +13,8 @@ Contents
   * [Licence](#licence)
   * [Contact](#contact)
 
-Introduction
-----
+## Introduction
+
 The recent discovery of numerous non-coding RNAs (long non-coding RNAs, in particular) has transformed our perception about the roles of RNAs in living organisms. Our ability to understand them, however, is hampered by our inability to solve their secondary and tertiary structures in high resolution efficiently by existing experimental techniques. Computational prediction of RNA secondary structure, on the other hand, has received much-needed improvement, recently, through deep learning of a large approximate data, followed by transfer learning with gold-standard base-pairing structures from high-resolution 3-D structures. Here, we expand this single-sequence-based learning to the use of evolutionary profiles and mutational coupling.
 
 |![](./docs/SPOTRNA2_pipeline.png)
@@ -31,8 +31,7 @@ The new method allows large improvement not only in canonical base-pairs (RNA se
 | <p align="center"> <b>Figure 2:</b> Distribution of F1-scores for individual RNAs on the combined test sets TS1, TS2, and TS3 given by various methods as labeled. On each box, the central mark indicates the median, and the bottom and top edges of the box indicate the 25th and 75th percentiles, respectively. The outliers are plotted individually by using the “+” symbol.|
 
 
-System Requirments
-----
+## System Requirments
 
 **Hardware Requirments:**
 It is recommended that your system should have 32 GB RAM, 500 GB disk space to support the in-memory operations for RNA sequence length less than 500. Multiple CPU threads are also recommended as the MSA generating process is computationally expensive.
@@ -48,8 +47,7 @@ It is recommended that your system should have 32 GB RAM, 500 GB disk space to s
 SPOT-RNA2 has been tested on Ubuntu 14.04, 16.04, and 18.04 operating systems.
 
 
-Installation:
-----
+## Installation:
 
 To install SPOT-RNA2 and its dependencies following commands can be used in the terminal:
 
@@ -97,8 +95,7 @@ Database needs to be formated for using in **BLASTN**. Please follow the command
 16. `./ncbi-blast-*+/bin/makeblastdb -in ./nt_database/nt -dbtype nucl`
 
 
-Usage
------
+## Usage
 
 ```
 ./run_spotrna2.sh sample_run/6ufj.fasta 
@@ -106,8 +103,7 @@ Usage
 
 The above command creates two folder `6ufj_features` and `6ufj_outputs` in input file directory (`sample_run/` in this case). `6ufj_features/` contains all the alignments (MSA-1, MSA-2) and features (PSSM, DCA, bps probability) generated from SPOT-RNA2 pipeline. `6ufj_outputs/` contains predicted secondary structure in bpseq format (`6ufj.bpseq`), ct format (`6ufj.ct`), dbn format (`6ufj.st`) with secondary structure motifs, and base-pair probability (`6ufj.prob`). The verify the results, it should be same as in `sample_seq_features` and `sample_seq_outputs` folder because both sequence (`sample_seq.fasta` and `6ufj.fasta`) are same.
 
-Datasets
------
+## Datasets
 
 The following datasets were used for Initial Training:
 * bpRNA[1]: Initial Learning (Training TR0, validation VL0, and test TS0)  
@@ -118,8 +114,7 @@ The following datasets were used for Transfer Learning:
 * PDB[2]: Transfer Learning (Training TR1, validation VL1, and testsets TS1, TS2, TS3, and TS_hard)  
 [Dropbox](https://www.dropbox.com/s/apqrsl7hm1091ie/PDB_dataset.tar.xz) or [Nihao Cloud](https://app.nihaocloud.com/f/f301baed4dac4474a185/)
 
-Citation guide
------
+## Citation guide
 
 **If you use SPOT-RNA2 for your research please cite the following papers:**
 
