@@ -57,7 +57,7 @@ The following command can be used to install SPOT-RNA2 and its dependencies:
 
 2. `docker image build -t spot_rna2 .`
 
-### Mannual installation:
+### Manual installation:
 
 To install SPOT-RNA2 and its dependencies following commands can be used in the terminal:
 
@@ -112,12 +112,12 @@ Database needs to be formated for using in **BLASTN**. Please follow the command
 
 `docker run --rm -ti -v $(pwd)/sample_run:/SPOT-RNA2/sample_run -v $(pwd)/nt_database/:/SPOT-RNA2/nt_database spot_rna2:latest ./run_spotrna2.sh sample_run/6ufj.fasta`
 
-### Run SPOT-RNA2 using Mannual installation:
+### Run SPOT-RNA2 using Manual installation:
 ```
 ./run_spotrna2.sh sample_run/6ufj.fasta 
 ```
 
-The above command creates two folder `6ufj_features` and `6ufj_outputs` in input file directory (`sample_run/` in this case). `6ufj_features/` contains all the alignments (MSA-1, MSA-2) and features (PSSM, DCA, bps probability) generated from SPOT-RNA2 pipeline. `6ufj_outputs/` contains predicted secondary structure in bpseq format (`6ufj.bpseq`), ct format (`6ufj.ct`), dbn format (`6ufj.st`) with secondary structure motifs, and base-pair probability (`6ufj.prob`). The verify the results, it should be same as in `sample_seq_features` and `sample_seq_outputs` folder because both sequence (`sample_seq.fasta` and `6ufj.fasta`) are same.
+Both command creates two folder `6ufj_features` and `6ufj_outputs` in input file directory (`sample_run/` in this case). `6ufj_features/` contains all the alignments (MSA-1, MSA-2) and features (PSSM, DCA, bps probability) generated from SPOT-RNA2 pipeline. `6ufj_outputs/` contains predicted secondary structure in bpseq format (`6ufj.bpseq`), ct format (`6ufj.ct`), dbn format (`6ufj.st`) with secondary structure motifs, and base-pair probability (`6ufj.prob`). The verify the results, it should be same as in `sample_seq_features` and `sample_seq_outputs` folder because both sequence (`sample_seq.fasta` and `6ufj.fasta`) are same.
 
 ## Datasets
 
