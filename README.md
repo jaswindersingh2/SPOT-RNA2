@@ -49,7 +49,7 @@ SPOT-RNA2 has been tested on Ubuntu 14.04, 16.04, and 18.04 operating systems.
 
 ## Installation
 
-# Installation using Docker image:
+### Installation using Docker image:
 
 The following command can be used to install SPOT-RNA2 and its dependencies:
 
@@ -57,7 +57,7 @@ The following command can be used to install SPOT-RNA2 and its dependencies:
 
 2. `docker image build .`
 
-# Mannual installation:
+### Mannual installation:
 
 To install SPOT-RNA2 and its dependencies following commands can be used in the terminal:
 
