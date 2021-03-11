@@ -55,7 +55,7 @@ The following command can be used to install SPOT-RNA2 and its dependencies:
 
 1. `git clone https://github.com/jaswindersingh2/SPOT-RNA2.git && cd SPOT-RNA2`
 
-2. `docker image build .`
+2. `docker image build -t spot_rna2 .`
 
 ### Mannual installation:
 
@@ -108,6 +108,11 @@ Database needs to be formated for using in **BLASTN**. Please follow the command
 
 ## Usage
 
+### Run SPOT-RNA2 using docker:
+
+`docker run --rm -ti -v $(pwd)/sample_run:/SPOT-RNA2/sample_run -v $(pwd)/nt_database/:/SPOT-RNA2/nt_database spot_rna2:latest ./run_spotrna2.sh sample_run/6ufj.fasta`
+
+### Run SPOT-RNA2 using Mannual installation:
 ```
 ./run_spotrna2.sh sample_run/6ufj.fasta 
 ```
