@@ -1,8 +1,8 @@
 # SPOT-RNA2
 Improved RNA Secondary Structure and Tertiary Base-pairing Prediction using Evolutionary Profile, Mutational Coupling and Two-dimensional Transfer Learning.
 
-Contents
-----
+## Contents
+
   * [Introduction](#introduction)
   * [Results](#results)
   * [System Requirments](#system-requirments)
