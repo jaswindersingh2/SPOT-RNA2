@@ -134,7 +134,7 @@ The following datasets were used for Transfer Learning:
 
 **If you use SPOT-RNA2 for your research please cite the following papers:**
 
-J. Singh, K. Paliwal, T Zhang, J. Singh, T Litfin, Y. Zhou, “Improved RNA Secondary Structure and Tertiary Base-pairing Prediction Using Evolutionary Profile, Mutational Coupling and Two-dimensional Transfer Learning.”, Bioinformatics, btab165, in press (2021).
+Jaswinder Singh, Kuldip Paliwal, Tongchuan Zhang, Jaspreet Singh, Thomas Litfin, Yaoqi Zhou, Improved RNA Secondary Structure and Tertiary Base-pairing Prediction Using Evolutionary Profile, Mutational Coupling and Two-dimensional Transfer Learning, Bioinformatics, 2021;, btab165, https://doi.org/10.1093/bioinformatics/btab165
 
 **If you use SPOT-RNA2 data sets and/or input feature pipeline, please consider citing the following papers:**
 
