@@ -335,7 +335,18 @@ else
     echo "          for PSSM and DCA features by removing the gaps and dashes.   "
     echo "======================================================================="
     echo ""
-	$path_infernal/esl-reformat --replace acgturyswkmbdhvn:................ a2m $feature_dir/$seq_id.msa > $feature_dir/temp.a2m
+
+	##### check if .msa	is not empty  #########
+	if [[ -s $feature_dir/$seq_id.msa ]] 
+	  then 
+		$path_infernal/esl-reformat --replace acgturyswkmbdhvn:................ a2m $feature_dir/$seq_id.msa > $feature_dir/temp.a2m
+	else 
+	  cat $feature_dir/$seq_id.fasta > $feature_dir/temp.a2m
+	  cat $feature_dir/$seq_id.fasta >> $feature_dir/temp.a2m
+	  sed -i '$ s/.$/./' $feature_dir/temp.a2m
+	fi
+
+#	$path_infernal/esl-reformat --replace acgturyswkmbdhvn:................ a2m $feature_dir/$seq_id.msa > $feature_dir/temp.a2m
 
 	if [ $? -eq 0 ]; then
 	    echo ""
