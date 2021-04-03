@@ -5,7 +5,7 @@ RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 RUN apt-get update && apt-get install -y build-essential wget virtualenv git python-minimal cpanminus gawk
 RUN cpanm Graph
 
-RUN wget 'https://www.dropbox.com/s/p94grd6c0v1eg73/SPOT-RNA2.tar.xz' || wget 'https://app.nihaocloud.com/f/3e826caf8efc43adaaa0/?dl=1' && tar -xvf SPOT-RNA2.tar.xz && rm SPOT-RNA2.tar.xz
+RUN wget 'https://www.dropbox.com/s/h6j53u7wjyj6uir/SPOT-RNA2.tar.xz' || wget 'https://app.nihaocloud.com/f/3e826caf8efc43adaaa0/?dl=1' && tar -xvf SPOT-RNA2.tar.xz && rm SPOT-RNA2.tar.xz
 WORKDIR SPOT-RNA2
 
 RUN wget -O utils/models_ckps.tar.xz 'https://www.dropbox.com/s/udzcsva76lh5wvq/models_ckps.tar.xz' || wget -O utils/models_ckps.tar.xz 'https://app.nihaocloud.com/f/586acb2658d74ccb92b8/?dl=1' && tar -xvf utils/models_ckps.tar.xz -C utils/ && rm utils/models_ckps.tar.xz
